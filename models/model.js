@@ -2,6 +2,8 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
+        currentUser: null, // user ID of user.
+
         page: [
             "home",
             "search",
@@ -16,8 +18,6 @@ const model = {
             "edit cat",
         ],
     },
-    
-    loggedIn: false, // check if the current user is logged in or not.
 
     input:  {
         constantInput: {
@@ -67,15 +67,25 @@ const model = {
         cat: [
             {
                 id: 0,
-                name: null,         // string
-                photo: [String],    // list of path-strings
-                rating: null,       // float
-                birthday: null,     // number
-                gender: null,       // string
-                race: null,         // string
-                color: null,        // string
-                furLength: null,    // string
-                about: null,        // string
+                name: null,             // string
+                photo: [String],        // list of path-strings
+                rating: null,           // float
+                givenRatings: [
+                    {
+                        userID: null,
+                        ratingGiven: null,
+                    },
+                    {
+                        userID: null,
+                        ratingGiven: null,
+                    },
+                ],
+                birthday: null,         // number
+                gender: null,           // string
+                race: null,             // string
+                color: null,            // string
+                furLength: null,        // string
+                about: null,            // string
             },
         ],
 
