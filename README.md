@@ -5,3 +5,4 @@ A team task given by GET-Academy.
 - William
 - Bethina 
 - Aleksander
+- Kamilla
