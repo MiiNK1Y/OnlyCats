@@ -5,7 +5,7 @@
 loginView()
 function loginView(){
     model.app.html.innerHTML = /*HTML*/ `
-
+    ${viewNavigationBar()}
         <div class="logInContainer">
             <div> Login </div>
             <div class="loginBox">
