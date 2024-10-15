@@ -1,11 +1,11 @@
 
 // BETHINA
 
-homeView()
 function homeView(){
     model.app.html.innerHTML = /*HTML*/`
     ${viewNavigationBar()}
-    <div> 
+    <div class="homeContainer">
+        <div> TOPP 10 NÅ </div> 
     
     </div>
     `;

@@ -2,7 +2,7 @@
 
 // BETHINA
 
-loginView()
+
 function loginView(){
     model.app.html.innerHTML = /*HTML*/ `
     ${viewNavigationBar()}
