@@ -1,8 +1,6 @@
 
 // KAMILLA
 
-updateAddUserView()
-
 function updateAddUserView() {
     model.app.html.innerHTML = /* HTML */`
         <div class="addUserContainer">
