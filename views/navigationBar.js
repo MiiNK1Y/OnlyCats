@@ -1,6 +1,6 @@
 
 
-function ViewNavBar(){
+function viewNavBar(){
     model.app.html.innerHTML = /*HTML*/`
     <div id="navbar">
         <button class="home">Hjem</button>
