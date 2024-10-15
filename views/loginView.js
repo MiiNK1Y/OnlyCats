@@ -1,7 +1,13 @@
 
+
+// BETHINA
+
 updateLoginView()
 function updateLoginView(){
     model.app.html.innerHTML = /*HTML*/ `
+
+        <div> NAVIGASJONS BAR HER </div>
+
         <div class="logInContainer">
             <div> Login </div>
             <div class="loginBox">
