@@ -2,7 +2,7 @@
 function updateAddCatView() {
     model.app.html.innerHTML = /* HTML */ `
 
-    
+
     <div class="addCatbox">
         <div><input placeholder="Kattens navn:"/></div>
         <br>
