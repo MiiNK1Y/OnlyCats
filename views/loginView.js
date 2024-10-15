@@ -2,8 +2,8 @@
 
 // BETHINA
 
-updateLoginView()
-function updateLoginView(){
+loginView()
+function loginView(){
     model.app.html.innerHTML = /*HTML*/ `
 
         <div> NAVIGASJONS BAR HER </div>
@@ -21,7 +21,6 @@ function updateLoginView(){
             <div> <button onclick="signIn()"> Logg inn </button> </div>
         </div>
 
-
     `;
 
-}
+} 
