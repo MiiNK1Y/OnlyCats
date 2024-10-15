@@ -51,7 +51,7 @@ const model = {
 
     data: {
         maxRating: 10,                  // the max rating allowed for a cat, may be edited later.
-        furLength: ["long", "short"],   // list of path-strings, only two values are to be used.
+        furLength: ["langhåret", "korthåret", "hårløs"],   // list of path-strings, only two values are to be used.
         
         catalogueSort: [
             "Sist lagt til",
