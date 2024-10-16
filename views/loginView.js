@@ -11,7 +11,7 @@ function loginView(){
                 <div> Brukernavn: </div>
                 <div> <input placeholder="Ditt brukernavn"/> </div>
                 <div> Passord: </div>
-                <div> <input placeholder="Ditt passord"/> </div>
+                <div> <input type="password" placeholder="Ditt passord"/> </div>
             </div>
             <div> <button onclick="signIn()"> Logg inn </button> </div>
         </div>
