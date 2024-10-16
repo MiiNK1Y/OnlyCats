@@ -67,7 +67,7 @@ const model = {
     cat: [
       {
         id: 0,
-        name: "thiccy boi", // string
+        name: "thiccest boy", // string
         photo: "img/UserID_0/CatID_0/",
         rating: 8.3, // float
         givenRatings: [
@@ -76,20 +76,20 @@ const model = {
             ratingGiven: 7,
           },
           {
-            userID: 2,
-            ratingGiven: 8,
+            userID: 4,
+            ratingGiven: 10,
           },
         ],
         birthday: 20220811, // number
-        gender: "Female", // string
+        gender: "Han", // string
         race: "Bengal", // string
-        color: "White", // string
-        furLength: "Long", // string
-        about: "Cuddely as fuck", // string
+        color: "Hvit", // string
+        furLength: "Lang", // string
+        about: "Kosen som faen.", // string
       },
       {
         id: 1,
-        name: "Sir MeowsallotThe First", // string
+        name: "Sir Meowsallot The First", // string
         photo: "img/UserID_1/CatID_4/",
         rating: 8.3, // float
         givenRatings: [
@@ -99,7 +99,7 @@ const model = {
           },
           {
             userID: 2,
-            ratingGiven: 10,
+            ratingGiven: 8,
           },
         ],
         birthday: 20010710, // number
@@ -127,7 +127,7 @@ const model = {
         birthday: 20200613, // number
         gender: "Hun", // string
         race: "Maine Coon", // string
-        color: "White", // string
+        color: "Hvit", // string
         furLength: "Long", // string
         about: "Skriker som en jævla banshee, men er veldig god.", // string
       },
@@ -164,13 +164,13 @@ const model = {
             ratingGiven: 2,
           },
           {
-            userID: 2,
+            userID: 3,
             ratingGiven: 1,
           },
         ],
         birthday: 20230215, // number
         gender: "Hun", // string
-        race: "Chinchilla", // string
+        race: "Persian", // string
         color: "White", // string
         furLength: "Kort", // string
         about: "Den mest nydelig og perfekte katten av alle :) Spiser bare laks og elsker å klatre på sofaen", // string
@@ -186,7 +186,7 @@ const model = {
             ratingGiven: 9,
           },
           {
-            userID: 2,
+            userID: 5,
             ratingGiven: 8,
           },
         ],
@@ -208,56 +208,56 @@ const model = {
         cats: [0], // list of ID numbers
         ratingsGiven: [
           {
-            catID: 0,
-            rating: 10, // number
+            catID: 3,
+            rating: 9, // number
           },
         ],
       },
       {
         id: 1,
-        username: "thicclover88", // string
+        username: "BeatriceTheQueen3", // string
         photo: "img/UserID_1/profile.jpg", // path-string
-        about: "love my thicc boi.", // string
-        cats: [0], // list of ID numbers
+        about: "Katte ekspert og frilufts pro.", // string
+        cats: [4], // list of ID numbers
         ratingsGiven: [
           {
             catID: 0,
-            rating: 10, // number
+            rating: 7, // number
           },
         ],
       },
       {
         id: 2,
-        username: "thicclover88", // string
+        username: "CatExtraordinare", // string
         photo: "img/UserID_2/profile.jpg", // path-string
-        about: "love my thicc boi.", // string
-        cats: [0], // list of ID numbers
+        about: "Skulle ønske jeg kunne fange andre sine katter som om di var pokemon >:).", // string
+        cats: [1], // list of ID numbers
         ratingsGiven: [
           {
-            catID: 0,
-            rating: 10, // number
+            catID: 1,
+            rating: 8, // number
           },
         ],
       },
       {
         id: 3,
-        username: "thicclover88", // string
+        username: "McLover", // string
         photo: "img/UserID_3/profile.jpg", // path-string
-        about: "love my thicc boi.", // string
-        cats: [0], // list of ID numbers
+        about: "Jeg elsker katter mest av alt, eller, nesten like mye som jeg elsker en god burger", // string
+        cats: [5], // list of ID numbers
         ratingsGiven: [
           {
-            catID: 0,
-            rating: 10, // number
+            catID: 4,
+            rating: 1, // number
           },
         ],
       },
       {
         id: 4,
-        username: "thicclover88", // string
+        username: "Average Pussy Enjoyer_69", // string
         photo: "img/UserID_4/profile.jpg", // path-string
-        about: "love my thicc boi.", // string
-        cats: [0], // list of ID numbers
+        about: " I love a good pussy.", // string
+        cats: [3], // list of ID numbers
         ratingsGiven: [
           {
             catID: 0,
@@ -267,14 +267,14 @@ const model = {
       },
       {
         id: 5,
-        username: "thicclover88", // string
+        username: "Nyamaster Master", // string
         photo: "img/UserID_5/profile.jpg", // path-string
-        about: "love my thicc boi.", // string
-        cats: [0], // list of ID numbers
+        about: "Liker katter, spesielt den som ikke er min.", // string
+        cats: [2], // list of ID numbers
         ratingsGiven: [
           {
-            catID: 0,
-            rating: 10, // number
+            catID: 5,
+            rating: 8, // number
           },
         ],
       },
