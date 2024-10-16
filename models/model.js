@@ -2,7 +2,7 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
-        currentUser: null, // user ID of user.
+        currentUser: 0, // user ID of user.
 
         page: [
             "home",
@@ -67,39 +67,127 @@ const model = {
         cat: [
             {
                 id: 0,
-                name: null,             // string
-                photo: [String],        // list of path-strings
-                rating: null,           // float
+                name: "thiccy boi",             // string
+                photo: "img/UserID_0/CatID_0/",
+                rating: 8.3,           // float
                 givenRatings: [
                     {
-                        userID: null,
-                        ratingGiven: null,
+                        userID: 1,
+                        ratingGiven: 7,
                     },
                     {
-                        userID: null,
-                        ratingGiven: null,
+                        userID: 2,
+                        ratingGiven: 8,
                     },
                 ],
-                birthday: null,         // number
-                gender: null,           // string
-                race: null,             // string
-                color: null,            // string
-                furLength: null,        // string
-                about: null,            // string
+                birthday: 20220811,     // number
+                gender: "Female",       // string
+                race: "Bengal",         // string
+                color: "White",         // string
+                furLength: "Long",      // string
+                about: "Cuddely as fuck", // string
+            },
+            {
+                id: 0,
+                name: "thiccy boi",             // string
+                photo: "img/UserID_0/CatID_0/",
+                rating: 8.3,           // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20220811,     // number
+                gender: "Female",       // string
+                race: "Bengal",         // string
+                color: "White",         // string
+                furLength: "Long",      // string
+                about: "Cuddely as fuck", // string
+            },
+            {
+                id: 0,
+                name: "thiccy boi",             // string
+                photo: "img/UserID_0/CatID_0/",
+                rating: 8.3,           // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20220811,     // number
+                gender: "Female",       // string
+                race: "Bengal",         // string
+                color: "White",         // string
+                furLength: "Long",      // string
+                about: "Cuddely as fuck", // string
+            },
+            {
+                id: 0,
+                name: "thiccy boi",             // string
+                photo: "img/UserID_0/CatID_0/",
+                rating: 8.3,           // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20220811,     // number
+                gender: "Female",       // string
+                race: "Bengal",         // string
+                color: "White",         // string
+                furLength: "Long",      // string
+                about: "Cuddely as fuck", // string
+            },
+            {
+                id: 0,
+                name: "thiccy boi",             // string
+                photo: "img/UserID_0/CatID_0/",
+                rating: 8.3,           // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20220811,     // number
+                gender: "Female",       // string
+                race: "Bengal",         // string
+                color: "White",         // string
+                furLength: "Long",      // string
+                about: "Cuddely as fuck", // string
             },
         ],
 
         user: [
             {
                 id: 0,
-                username: null,     // string
-                photo: null,        // path-string
-                about: null,        // string
-                cats: [Number],     // list of ID numbers
+                username: "thicclover88",           // string
+                photo: "img/UserID_0/profile.jpg",  // path-string
+                about: "love my thicc boi.",        // string
+                cats: [0],                          // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 0,
-                        rating: null,   // number
+                        rating: 10,   // number
                     },
                 ],
             },
