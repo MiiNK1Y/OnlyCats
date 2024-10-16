@@ -2,7 +2,7 @@
 // KAMILLA
 
 function updateAddUserView() {
-    model.app.html.innerHTML = /* HTML */`
+    let html = /* HTML */`
         <div class="addUserContainer">
             <div>Lag ny bruker</div>
             <div class="addUserbox">
@@ -21,4 +21,5 @@ function updateAddUserView() {
             <div> <button onclick="addUser()">Lag ny bruker</button> </div>
         </div>
     `;
+    return html;
 }
