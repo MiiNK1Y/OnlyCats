@@ -89,51 +89,51 @@ const model = {
       },
       {
         id: 1,
-        name: "thiccy boi", // string
+        name: "Sir MeowsallotThe First", // string
         photo: "img/UserID_1/CatID_4/",
         rating: 8.3, // float
         givenRatings: [
           {
             userID: 1,
-            ratingGiven: 7,
+            ratingGiven: 10,
           },
           {
             userID: 2,
-            ratingGiven: 8,
+            ratingGiven: 10,
           },
         ],
-        birthday: 20220811, // number
-        gender: "Female", // string
-        race: "Bengal", // string
-        color: "White", // string
-        furLength: "Long", // string
-        about: "Cuddely as fuck", // string
+        birthday: 20010710, // number
+        gender: "Han", // string
+        race: "Blandet", // string
+        color: "Oransje", // string
+        furLength: "Lang", // string
+        about: "Siste overlevende fra den store atom krisen", // string
       },
       {
         id: 2,
-        name: "thiccy boi", // string
+        name: "Nyamaster", // string
         photo: "img/UserID_2/CatID_1/",
         rating: 8.3, // float
         givenRatings: [
           {
             userID: 1,
-            ratingGiven: 7,
+            ratingGiven: 8,
           },
           {
             userID: 2,
-            ratingGiven: 8,
+            ratingGiven: 7,
           },
         ],
-        birthday: 20220811, // number
-        gender: "Female", // string
-        race: "Bengal", // string
+        birthday: 20200613, // number
+        gender: "Hun", // string
+        race: "Maine Coon", // string
         color: "White", // string
         furLength: "Long", // string
-        about: "Cuddely as fuck", // string
+        about: "Skriker som en jævla banshee, men er veldig god.", // string
       },
       {
         id: 3,
-        name: "thiccy boi", // string
+        name: "Larry the cat&puss", // string
         photo: "img/UserID_3/CatID_5/",
         rating: 8.3, // float
         givenRatings: [
@@ -143,59 +143,59 @@ const model = {
           },
           {
             userID: 2,
-            ratingGiven: 8,
+            ratingGiven: 9,
           },
         ],
-        birthday: 20220811, // number
-        gender: "Female", // string
-        race: "Bengal", // string
-        color: "White", // string
+        birthday: 20150918, // number
+        gender: "Han", // string
+        race: "Norsk Skogskatt", // string
+        color: "Grå", // string
         furLength: "Long", // string
-        about: "Cuddely as fuck", // string
+        about: "Liker å putte på en hatt og forsvinne tilfeldig, sover mye ellers", // string
       },
       {
         id: 4,
-        name: "thiccy boi", // string
+        name: "Princess", // string
         photo: "img/UserID_4/CatID_3/",
         rating: 8.3, // float
         givenRatings: [
           {
             userID: 1,
-            ratingGiven: 7,
+            ratingGiven: 2,
           },
           {
             userID: 2,
-            ratingGiven: 8,
+            ratingGiven: 1,
           },
         ],
-        birthday: 20220811, // number
-        gender: "Female", // string
-        race: "Bengal", // string
+        birthday: 20230215, // number
+        gender: "Hun", // string
+        race: "Chinchilla", // string
         color: "White", // string
-        furLength: "Long", // string
-        about: "Cuddely as fuck", // string
+        furLength: "Kort", // string
+        about: "Den mest nydelig og perfekte katten av alle :) Spiser bare laks og elsker å klatre på sofaen", // string
       },
       {
         id: 5,
-        name: "thiccy boi", // string
+        name: "McFeast", // string
         photo: "img/UserID_5/CatID_2/",
         rating: 8.3, // float
         givenRatings: [
           {
             userID: 1,
-            ratingGiven: 7,
+            ratingGiven: 9,
           },
           {
             userID: 2,
             ratingGiven: 8,
           },
         ],
-        birthday: 20220811, // number
-        gender: "Female", // string
-        race: "Bengal", // string
-        color: "White", // string
+        birthday: 20200518, // number
+        gender: "Han", // string
+        race: "Blandet", // string
+        color: "Gul&Oransje", // string
         furLength: "Long", // string
-        about: "Cuddely as fuck", // string
+        about: "Han elsker det.", // string
       },
     ],
 
