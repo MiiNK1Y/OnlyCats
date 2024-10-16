@@ -12,7 +12,7 @@ function viewNavigationBar(){
 }
 
 function userNavbar() {
-    user = model.app.currentUser
+    user = model.app.currentUser;
 
     if (user == null) {
         html = /*HTML*/`
@@ -20,7 +20,7 @@ function userNavbar() {
             <button class="new_user">Lag ny bruker</button>
         `;
     } else {
-        userPicture = model.data.user[model.app.currentUser].photo
+        userPicture = model.data.user[model.app.currentUser].photo;
         html = /*HTML*/`
             <img src="${userPicture}" />
             <button>profile</button>
