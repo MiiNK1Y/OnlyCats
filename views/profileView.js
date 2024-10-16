@@ -9,19 +9,20 @@ function viewProfile(){
         
         <div class= "userPhotoContainer"> 
             <div class="profilePhoto"> Her kommer profilbilde </div>
+            <div> <button> Rediger profil </button> </div>
+            <div> <button> Legg til ny katt </button> </div>
         </div>
 
         <div class="userTxtContainer">
-            <div> Brukernavn </div>
+            <div> @brukernavn </div>
             <hr>
             <div class="bio"> 
-                Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
             <br><br>
             <div> 
-                Brukernavns katter 
-                <button> Legg til ny katt </button>
+                @brukernavns katter: 
             </div>
             <hr>
             <br><br>
