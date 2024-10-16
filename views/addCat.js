@@ -4,7 +4,7 @@ function updateAddCatView() {
     
         <div class="addCatContainer">
             <div class="addCatPicBox">
-                <label for="avatar">Legg til bilder:</label>
+                <label for="avatar">Legg til bilder:</label> 
                 <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
             </div>
             <div class="addCatBox">
