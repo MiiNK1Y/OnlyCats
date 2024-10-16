@@ -1,6 +1,7 @@
 
 function updateAddCatView() {
     let html = /* HTML */ `
+    ${viewNavigationBar()}
         <div class="addCatContainer">
             <div class="addCatPicBox">
                 <label for="avatar">Legg til bilder:</label> 
