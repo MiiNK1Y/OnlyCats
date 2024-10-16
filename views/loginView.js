@@ -3,7 +3,7 @@
 // BETHINA
 
 function loginView(){
-    model.app.html.innerHTML = /*HTML*/ `
+    let html = /*HTML*/ `
     ${viewNavigationBar()}
         <div class="logInContainer">
             <div> Login </div>
@@ -17,4 +17,5 @@ function loginView(){
         </div>
 
     `;
+    return html;
 } 
