@@ -19,5 +19,5 @@ function search() {
 }
 
 function profile() {
-    
+    model.app.currentPage = "user profile"
 }
