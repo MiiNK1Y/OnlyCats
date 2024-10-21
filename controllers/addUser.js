@@ -1,3 +1,3 @@
 function addNewUser() {
-    // code here
+    model.app.currentPage = "add user";
 }

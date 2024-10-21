@@ -2,6 +2,7 @@
 // KAMILLA
 
 function updateAddUserView() {
+
     let html = /* HTML */`
     ${viewNavigationBar()}
         <div class="addUserContainer">

@@ -1,7 +1,8 @@
 
 // BETHINA
 
-function viewProfile(){   
+function viewProfile(){  
+
     let html = /*HTML*/`
     ${viewNavigationBar()}
 

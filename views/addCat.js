@@ -1,5 +1,6 @@
 
 function updateAddCatView() {
+ 
     let html = /* HTML */ `
     ${viewNavigationBar()}
         <div class="addCatContainer">

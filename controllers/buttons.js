@@ -1,17 +1,17 @@
 function viewCatalogueButton(){
-    // code here
+    model.app.currentPage = "catalogue";
 }
 
 function viewHomeButton(){
-    // code here
+    model.app.currentPage = "home";
 }
 
 function viewProfileButton(){
-    // code here
+    model.app.currentPage = "user profile";
 }
 
 function viewCatButton(){
-    // code here
+    model.app.currentPage = "cat profile";
 }
 
 function viewRatingCardButton() {
