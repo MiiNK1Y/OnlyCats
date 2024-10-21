@@ -206,20 +206,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
-                        ratingGiven: 9,
+                        userID: 6,
+                        ratingGiven: 2,
                     },
                     {
-                        userID: 5,
-                        ratingGiven: 8,
+                        userID: 7,
+                        ratingGiven: 5,
                     },
                 ],
-                birthday: 20200518, // number
+                birthday: 20200117, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
+                color: "Grå", // string
                 furLength: "Long", // string
-                about: "Han elsker det.", // string
+                about: "Elsker Fisk.", // string
             },
             {
                 id: 7,
@@ -228,20 +228,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
+                        userID: 8,
                         ratingGiven: 9,
                     },
                     {
-                        userID: 5,
-                        ratingGiven: 8,
+                        userID: 9,
+                        ratingGiven: 9,
                     },
                 ],
                 birthday: 20200518, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
-                furLength: "Long", // string
-                about: "Han elsker det.", // string
+                color: "Svart", // string
+                furLength: "Kort", // string
+                about: "Har myke og fantastiske poter.", // string
             },
             {
                 id: 8,
@@ -250,20 +250,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
-                        ratingGiven: 9,
+                        userID: 10,
+                        ratingGiven: 5,
                     },
                     {
-                        userID: 5,
-                        ratingGiven: 8,
+                        userID: 4,
+                        ratingGiven: 10,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
+                birthday: 20210811, // number
+                gender: "Hun", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
+                color: "Svart&Hvit", // string
                 furLength: "Long", // string
-                about: "Han elsker det.", // string
+                about: "Jeg får han ikke ut av huset mit.", // string
             },
             {
                 id: 9,
@@ -272,20 +272,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
-                        ratingGiven: 9,
+                        userID: 5,
+                        ratingGiven: 6,
                     },
                     {
-                        userID: 5,
-                        ratingGiven: 8,
+                        userID: 2,
+                        ratingGiven: 7,
                     },
                 ],
-                birthday: 20200518, // number
+                birthday: 20170518, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
+                color: "Brun", // string
                 furLength: "Long", // string
-                about: "Han elsker det.", // string
+                about: "Something something, katt.", // string
             },
             {
                 id: 10,
@@ -295,7 +295,7 @@ const model = {
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 9,
+                        ratingGiven: 4,
                     },
                     {
                         userID: 5,
@@ -305,9 +305,9 @@ const model = {
                 birthday: 20200518, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
-                furLength: "Long", // string
-                about: "Han elsker det.", // string
+                color: "Gul&Hvit", // string
+                furLength: "Kort", // string
+                about: "Mofse Mofse.", // string
             },
             {
                 id: 11,
@@ -316,20 +316,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
-                        ratingGiven: 9,
+                        userID: 8,
+                        ratingGiven: 1,
                     },
                     {
-                        userID: 5,
-                        ratingGiven: 8,
+                        userID: 2,
+                        ratingGiven: 1,
                     },
                 ],
-                birthday: 20200518, // number
+                birthday: 19500101, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
+                color: "Svart", // string
                 furLength: "Long", // string
-                about: "Han elsker det.", // string
+                about: "AAAAAAAAAAAAAAAA.", // string
             },
             {
                 id: 12,
@@ -346,12 +346,12 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
+                birthday: 20240316, // number
+                gender: "Hun", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
+                color: "Gul&Lilla", // string
                 furLength: "Long", // string
-                about: "Han elsker det.", // string
+                about: "Loompa.", // string
             },
             {
                 id: 13,
@@ -360,20 +360,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
+                        userID: 7,
                         ratingGiven: 9,
                     },
                     {
-                        userID: 5,
+                        userID: 9,
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
+                birthday: 20200212, // number
+                gender: "Hun", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
-                furLength: "Long", // string
-                about: "Han elsker det.", // string
+                color: "Rosa", // string
+                furLength: "Kort", // string
+                about: "Sweet and thick.", // string
             },
             {
                 id: 14,
@@ -383,14 +383,14 @@ const model = {
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 9,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 5,
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200518, // number
+                birthday: 20220820, // number
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Gul&Oransje", // string
@@ -404,20 +404,20 @@ const model = {
                 rating: 8.3, // float
                 givenRatings: [
                     {
-                        userID: 1,
+                        userID: 3,
                         ratingGiven: 9,
                     },
                     {
-                        userID: 5,
+                        userID: 7,
                         ratingGiven: 8,
                     },
                 ],
                 birthday: 20200518, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
-                furLength: "Long", // string
-                about: "Han elsker det.", // string
+                color: "Gul", // string
+                furLength: "Kort", // string
+                about: "Ser lik ut på vei in, og på vei ut.", // string
             },
         ],
 
