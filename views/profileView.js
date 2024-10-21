@@ -25,7 +25,7 @@ function viewProfile(){
                 @brukernavns katter: 
             </div>
             <hr>
-            <br><br>
+            <br><br>   <!-- Loop med brukerens katter ? -->
             <div class="usersCats">
                 <div class="userCatPhoto"> IMG </div> 
                 <div class="catNameScore">
@@ -54,7 +54,7 @@ function viewProfile(){
         <div class="reviewContainer">
             <div class="reviewHeader"> Dine vurderinger </div>
 
-            <br><br>
+            <br><br>  <!-- Loop med brukerens vurderinger ? -->
 
             <div class="reviewBody">
 

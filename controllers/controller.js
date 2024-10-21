@@ -17,3 +17,7 @@ function compileRating() {
 function search() {
     // code here
 }
+
+function profile() {
+    
+}
