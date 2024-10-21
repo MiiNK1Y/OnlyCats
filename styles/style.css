@@ -103,7 +103,8 @@ input {
 
 
 /* -------------- HOME PAGE --------------*/
-.home_container {
+.home_container,
+.login_container {
     font-family: "comfortaa";
     display: flex;
     flex-direction: column;
@@ -112,7 +113,8 @@ input {
     margin-top: 30px;
 }
 
-.home_container * {
+.home_container,
+.login_container * {
     color: var(--Text);
 }
 
@@ -169,3 +171,28 @@ input {
 }
 
 /* -------------- LOGIN --------------*/
+.login_container {
+    text-align: center;
+    margin-top: 300px;
+    gap: 20px;
+}
+
+.login_box {
+    background-color: var(--Base);
+    padding: 10px 50px 30px 50px;
+    border-radius: 30px;
+}
+
+.login_container input {
+    background-color: var(--Mantle);
+    border: none;
+}
+
+.login_container button {
+    background-color: var(--Mauve);
+    color: black;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+}

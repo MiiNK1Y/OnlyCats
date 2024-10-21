@@ -1,21 +1,16 @@
-
-
-// BETHINA
-
 function loginView(){
     let html = /*HTML*/ `
-    ${viewNavigationBar()}
-        <div class="logInContainer">
-            <div> Login </div>
-            <div class="loginBox">
-                <div> Brukernavn: </div>
-                <div> <input placeholder="Ditt brukernavn"/> </div>
-                <div> Passord: </div>
-                <div> <input type="password" placeholder="Ditt passord"/> </div>
+        <div class="login_container">
+            <h1>Login</h1>
+            <div class="login_box">
+                <h2>Brukernavn:</h2>
+                <input placeholder="Ditt brukernavn"/>
+                <h2>Passord:</h2>
+                <input type="password" placeholder="Ditt passord"/>
             </div>
-            <div> <button onclick="signIn()"> Logg inn </button> </div>
+            <button onclick="signIn()">Logg inn</button>
         </div>
-
     `;
+
     return html;
-} 
+}
