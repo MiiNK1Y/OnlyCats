@@ -199,6 +199,226 @@ const model = {
                 furLength: "Long", // string
                 about: "Han elsker det.", // string
             },
+            {
+                id: 6,
+                name: "Bilbo Baggins", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 7,
+                name: "Mr Fluffy Paws", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 8,
+                name: "Snarly Mc.Clawkins", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 9,
+                name: "Bubbsy", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 10,
+                name: "Lefse", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 11,
+                name: "Shrieker", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 12,
+                name: "Oompa", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 13,
+                name: "Poptart", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 14,
+                name: "Pootet", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
+            {
+                id: 15,
+                name: "Corn", // string
+                photo: "img/UserID_5/CatID_2/",
+                rating: 8.3, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 8,
+                    },
+                ],
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul&Oransje", // string
+                furLength: "Long", // string
+                about: "Han elsker det.", // string
+            },
         ],
 
         user: [
@@ -308,7 +528,7 @@ const model = {
             },
             {
                 id: 8,
-                username: "Purrfect Reviewer", // string
+                username: "Purrfect Owner", // string
                 photo: "img/UserID_5/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
