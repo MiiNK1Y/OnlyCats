@@ -280,6 +280,71 @@ const model = {
                     },
                 ],
             },
+            {
+                id: 6,
+                username: "Feline Fellow06", // string
+                photo: "img/UserID_5/profile.jpg", // path-string
+                about: "Liker katter, spesielt den som ikke er min.", // string
+                cats: [2], // list of ID numbers
+                ratingsGiven: [
+                    {
+                        catID: 5,
+                        rating: 8, // number
+                    },
+                ],
+            },
+            {
+                id: 7,
+                username: "TheOneWhoMeows1999", // string
+                photo: "img/UserID_5/profile.jpg", // path-string
+                about: "Liker katter, spesielt den som ikke er min.", // string
+                cats: [2], // list of ID numbers
+                ratingsGiven: [
+                    {
+                        catID: 5,
+                        rating: 8, // number
+                    },
+                ],
+            },
+            {
+                id: 8,
+                username: "Purrfect Reviewer", // string
+                photo: "img/UserID_5/profile.jpg", // path-string
+                about: "Liker katter, spesielt den som ikke er min.", // string
+                cats: [2], // list of ID numbers
+                ratingsGiven: [
+                    {
+                        catID: 5,
+                        rating: 8, // number
+                    },
+                ],
+            },
+            {
+                id: 9,
+                username: "FurryFuzzman", // string
+                photo: "img/UserID_5/profile.jpg", // path-string
+                about: "Liker katter, spesielt den som ikke er min.", // string
+                cats: [2], // list of ID numbers
+                ratingsGiven: [
+                    {
+                        catID: 5,
+                        rating: 8, // number
+                    },
+                ],
+            },
+            {
+                id: 10,
+                username: "NotAClosetFurry_2", // string
+                photo: "img/UserID_5/profile.jpg", // path-string
+                about: "Liker katter, spesielt den som ikke er min.", // string
+                cats: [2], // list of ID numbers
+                ratingsGiven: [
+                    {
+                        catID: 5,
+                        rating: 8, // number
+                    },
+                ],
+            },
         ],
     },
 };
