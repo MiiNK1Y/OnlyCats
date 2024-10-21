@@ -16,11 +16,20 @@ function homeView(){
 
 
 function topTen() {
-    let topTenItemHtml = function(rating, img, name) {
-       let html = /*HTML*/`
+
+    const first = "🌟🌟🌟";
+    const second = "⭐⭐";
+    const third = "⭐";
+
+    let topTenItemHtml = function(rating, img, name, star) {
+        console.log(star);
+        let html = /*HTML*/`
             <div class="top-ten-item_container">
+                <div class="star-rating">${star ?? ""}</div>
                 <div class="rating">${rating} / 10</div>
-                <img src="${img}/main.jpg" />
+                <div class="top-cats_img-container">
+                    <img src="${img}/main.jpg" />
+                </div>
                 <div class="name">${name}</div>
             </div>
         `;
@@ -28,24 +37,35 @@ function topTen() {
         return html;
     };
 
-    let html = "";
-
     let cats = model.data.cat;
     let sortedCats = cats.sort((a, b) => b.rating - a.rating);
 
-    // demo for sorting based on name instead of rating:
-    //let sortedCats = cats.sort((a, b) => a.name.localeCompare(b.name));
+    let html = "";
 
     for (let i = 0; i < 6; i++) {
 
-        // remember to include funcionality to check for top 3 cats
-        // to give them stars above their images in the view.
+        let star = "";
+
+        switch (i) {
+            case 0:
+                star = first;
+                break;
+            case 1:
+                star = second;
+                break;
+            case 2:
+                star = third;
+                break;
+            default:
+                star = undefined;
+                break;
+        }
 
         let rating = sortedCats[i].rating;
         let img = sortedCats[i].photo;
         let name = sortedCats[i].name;
 
-        html += topTenItemHtml(rating, img, name);
+        html += topTenItemHtml(rating, img, name, star);
     }
 
     return html;
