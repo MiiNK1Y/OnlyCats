@@ -503,12 +503,12 @@ const model = {
             {
                 id: 6,
                 username: "Feline Fellow06", // string
-                photo: "img/UserID_5/profile.jpg", // path-string
+                photo: "img/UserID_6/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
                 ratingsGiven: [
                     {
-                        catID: 5,
+                        catID: 10,
                         rating: 8, // number
                     },
                 ],
@@ -516,52 +516,52 @@ const model = {
             {
                 id: 7,
                 username: "TheOneWhoMeows1999", // string
-                photo: "img/UserID_5/profile.jpg", // path-string
+                photo: "img/UserID_7/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
                 ratingsGiven: [
                     {
-                        catID: 5,
-                        rating: 8, // number
+                        catID: 6,
+                        rating: 6, // number
                     },
                 ],
             },
             {
                 id: 8,
                 username: "Purrfect Owner", // string
-                photo: "img/UserID_5/profile.jpg", // path-string
+                photo: "img/UserID_8/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
                 ratingsGiven: [
                     {
-                        catID: 5,
-                        rating: 8, // number
+                        catID: 9,
+                        rating: 3, // number
                     },
                 ],
             },
             {
                 id: 9,
                 username: "FurryFuzzman", // string
-                photo: "img/UserID_5/profile.jpg", // path-string
+                photo: "img/UserID_9/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
                 ratingsGiven: [
                     {
-                        catID: 5,
-                        rating: 8, // number
+                        catID: 7,
+                        rating: 6, // number
                     },
                 ],
             },
             {
                 id: 10,
                 username: "NotAClosetFurry_2", // string
-                photo: "img/UserID_5/profile.jpg", // path-string
+                photo: "img/UserID_10/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
                 ratingsGiven: [
                     {
-                        catID: 5,
-                        rating: 8, // number
+                        catID: 8,
+                        rating: 2, // number
                     },
                 ],
             },
