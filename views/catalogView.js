@@ -33,11 +33,10 @@ function viewCatalogueatalog() {
     let html = "";
 
     for (let i = 0; i < cats.length; i++) {
-        let rating = cats[i].rating;
         let img = cats[i].photo;
         let name = cats[i].name;
 
-        html += catalogueElement(rating, img, name);
+        html += catalogueElement(img, name);
     }
     
     return html;
