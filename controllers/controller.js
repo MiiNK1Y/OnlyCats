@@ -3,7 +3,8 @@
 
 
 function signIn() {
-    // code here
+    model.app.currentPage ="home";
+    updateView();
 }
 
 function viewloginPage() {
@@ -11,12 +12,14 @@ function viewloginPage() {
 }
 
 function viewNewUserPage() {
-    // code here
+    model.app.currentPage = "newUserPage";
+    updateView();
 }
 
 
 function homePage(){
-    // code here
+    model.app.currentPage = "home";
+    updateView();
 }
 
 
@@ -27,7 +30,8 @@ function compileRating() {
 
 
 function viewProfilePage() {
-    model.app.currentPage = "user profile"
+    model.app.currentPage = "profilePage";
+    updateView();
 }
 
 
@@ -37,7 +41,8 @@ function search() {
 }
 
 function viewCatalogue() {
-    // code here
+    model.app.currentPage = "catalogue";
+    updateView();
 }
 
 function sortCatalogue() {
