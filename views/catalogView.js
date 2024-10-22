@@ -1,5 +1,5 @@
 
-function viewCatalogueatalog() {
+function viewCatalogue() {
     
 
     function catalogueElement(img, name) {
