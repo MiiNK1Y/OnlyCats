@@ -1,6 +1,20 @@
+
 function catalog() {
-    function catalogElement(rating, img, name) {
+    function catalogElement(img, name) {
         let html = /*HTML*/`
+        <div class="filterButtons">
+            <div> Sorter etter:
+            <button>Sist lagt til</button>
+            <button>Mest populær</button>
+            <button>Tilfeldig</button>
+            <button>Alder</button>
+            <button>Kjønn</button>
+            <button>Farge</button>
+            <button>Navn A-Å</button>
+            <button>Navn Å-A</button>
+            <button>Rase</button>
+        </div> 
+        </div>
             <div class="catalog_container">
                 <div class="catalog_img-container">
                     <img src="${img}/main.jpg" />
@@ -28,7 +42,7 @@ function catalog() {
 }
 
 model.app.html.innerHTML = /*HTML*/ `
-    <div class="home_container">
+    <div class="catalog_container">
     <h1>Kattalog!</h1>
     <div class="header_underline"></div>
         <div class="top-cats_container_wrapper">
