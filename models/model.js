@@ -27,12 +27,12 @@ const model = {
         },
 
         signIn: {
-            userName: null, // string
+            username: null, // string
             password: null, // string
         },
 
         signUp: {
-            userName: null, // string
+            username: null, // string
             password: null, // string
             repeatPassword: null, // string
             email: null, // string
@@ -86,7 +86,7 @@ const model = {
                 gender: "Han", // string
                 race: "Bengal", // string
                 color: "Hvit", // string
-                furLength: "Lang", // string
+                furLength: "langhåret", // string
                 about: "Kosen som faen.", // string
             },
             {
@@ -108,14 +108,14 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Oransje", // string
-                furLength: "Lang", // string
+                furLength: "langhåret", // string
                 about: "Siste overlevende fra den store atom krisen", // string
             },
             {
                 id: 2,
-                name: "Nyamaster", // string
-                photo: "img/UserID_2/CatID_1/",
-                rating: 8.3, // float
+                name: "Kairo", // string
+                photo: "img/UserID_2/CatID_2/main.jpg",
+                rating: 9.9, // float
                 givenRatings: [
                     {
                         userID: 1,
@@ -123,19 +123,19 @@ const model = {
                     },
                     {
                         userID: 2,
-                        ratingGiven: 7,
+                        ratingGiven: 10,
                     },
                 ],
-                birthday: 20200613, // number
-                gender: "Hun", // string
-                race: "Maine Coon", // string
-                color: "Hvit", // string
-                furLength: "Long", // string
-                about: "Skriker som en jævla banshee, men er veldig god.", // string
+                birthday: 20230324, // number
+                gender: "Hann", // string
+                race: "Bengal", // string
+                color: "Brun og sort", // string
+                furLength: "korthåret", // string
+                about: "Favoritt hobby: Rive ned stua.", // string
             },
             {
                 id: 3,
-                name: "Larry the cat&puss", // string
+                name: "Larry the Cat&puss", // string
                 photo: "img/UserID_3/CatID_5/",
                 rating: 8.3, // float
                 givenRatings: [
@@ -152,7 +152,7 @@ const model = {
                 gender: "Han", // string
                 race: "Norsk Skogskatt", // string
                 color: "Grå", // string
-                furLength: "Long", // string
+                furLength: "langhåret", // string
                 about: "Liker å putte på en hatt og forsvinne tilfeldig, sover mye ellers", // string
             },
             {
@@ -172,9 +172,9 @@ const model = {
                 ],
                 birthday: 20230215, // number
                 gender: "Hun", // string
-                race: "Persian", // string
-                color: "White", // string
-                furLength: "Kort", // string
+                race: "Perser", // string
+                color: "Hvit", // string
+                furLength: "langhåret", // string
                 about: "Den mest nydelig og perfekte katten av alle :) Spiser bare laks og elsker å klatre på sofaen", // string
             },
             {
@@ -196,7 +196,7 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Gul&Oransje", // string
-                furLength: "Long", // string
+                furLength: "langhåret", // string
                 about: "Han elsker det.", // string
             },
             {
@@ -218,7 +218,7 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Grå", // string
-                furLength: "Long", // string
+                furLength: "langhåret", // string
                 about: "Elsker Fisk.", // string
             },
             {
@@ -240,7 +240,7 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Svart", // string
-                furLength: "Kort", // string
+                furLength: "korthåret", // string
                 about: "Har myke og fantastiske poter.", // string
             },
             {
@@ -262,8 +262,8 @@ const model = {
                 gender: "Hun", // string
                 race: "Blandet", // string
                 color: "Svart&Hvit", // string
-                furLength: "Long", // string
-                about: "Jeg får han ikke ut av huset mit.", // string
+                furLength: "langhåret", // string
+                about: "Jeg får hun ikke ut av huset mitt.", // string
             },
             {
                 id: 9,
@@ -284,7 +284,7 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Brun", // string
-                furLength: "Long", // string
+                furLength: "hårløs", // string
                 about: "Something something, katt.", // string
             },
             {
@@ -306,30 +306,30 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Gul&Hvit", // string
-                furLength: "Kort", // string
+                furLength: "korthåret", // string
                 about: "Mofse Mofse.", // string
             },
             {
                 id: 11,
-                name: "Shrieker", // string
-                photo: "img/UserID_5/CatID_2/",
-                rating: 8.3, // float
+                name: "Oscar", // string
+                photo: "img/UserID_2/CatID_11/main.jpg",
+                rating: 10.0, // float
                 givenRatings: [
                     {
                         userID: 8,
-                        ratingGiven: 1,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 2,
-                        ratingGiven: 1,
+                        ratingGiven: 7,
                     },
                 ],
-                birthday: 19500101, // number
+                birthday: 20240320, // number
                 gender: "Han", // string
-                race: "Blandet", // string
-                color: "Svart", // string
-                furLength: "Long", // string
-                about: "AAAAAAAAAAAAAAAA.", // string
+                race: "Ragdoll, hellig birma", // string
+                color: "Hvit og sort", // string
+                furLength: "langhåret", // string
+                about: "Matvrak. Halvt banshee.", // string
             },
             {
                 id: 12,
@@ -350,7 +350,7 @@ const model = {
                 gender: "Hun", // string
                 race: "Blandet", // string
                 color: "Gul&Lilla", // string
-                furLength: "Long", // string
+                furLength: "langhåret", // string
                 about: "Loompa.", // string
             },
             {
@@ -372,12 +372,12 @@ const model = {
                 gender: "Hun", // string
                 race: "Blandet", // string
                 color: "Rosa", // string
-                furLength: "Kort", // string
+                furLength: "hårløs", // string
                 about: "Sweet and thick.", // string
             },
             {
                 id: 14,
-                name: "Pootet", // string
+                name: "Potet", // string
                 photo: "img/UserID_5/CatID_2/",
                 rating: 8.3, // float
                 givenRatings: [
@@ -394,7 +394,7 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Brun", // string
-                furLength: "Long", // string
+                furLength: "langhåret", // string
                 about: "Vokser fra jorden.", // string
             },
             {
@@ -416,8 +416,8 @@ const model = {
                 gender: "Han", // string
                 race: "Blandet", // string
                 color: "Gul", // string
-                furLength: "Kort", // string
-                about: "Ser lik ut på vei in, og på vei ut.", // string
+                furLength: "korthåret", // string
+                about: "Ser lik ut på vei inn, og på vei ut.", // string
             },
         ],
 
@@ -450,14 +450,18 @@ const model = {
             },
             {
                 id: 2,
-                username: "CatExtraordinare", // string
+                username: "bbthina", // string
                 photo: "img/UserID_2/profile.jpg", // path-string
-                about: "Skulle ønske jeg kunne fange andre sine katter som om di var pokemon >:).", // string
-                cats: [1], // list of ID numbers
+                about: "Slowly making my way to becoming a crazy catlady", // string
+                cats: [1, 11], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 1,
-                        rating: 8, // number
+                        rating: 10, // number
+                    },
+                    {
+                        catID: 11,
+                        rating: 10, // number
                     },
                 ],
             },
@@ -476,7 +480,7 @@ const model = {
             },
             {
                 id: 4,
-                username: "Average Pussy Enjoyer_69", // string
+                username: "Average_Pussy_Enjoyer_69", // string
                 photo: "img/UserID_4/profile.jpg", // path-string
                 about: " I love a good pussy.", // string
                 cats: [3], // list of ID numbers
@@ -489,7 +493,7 @@ const model = {
             },
             {
                 id: 5,
-                username: "Nyamaster Master", // string
+                username: "Nyamaster_Master", // string
                 photo: "img/UserID_5/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
@@ -502,7 +506,7 @@ const model = {
             },
             {
                 id: 6,
-                username: "Feline Fellow06", // string
+                username: "Feline_Fellow06", // string
                 photo: "img/UserID_6/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
@@ -528,7 +532,7 @@ const model = {
             },
             {
                 id: 8,
-                username: "Purrfect Owner", // string
+                username: "Purrfect_Owner", // string
                 photo: "img/UserID_8/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [2], // list of ID numbers
