@@ -114,7 +114,7 @@ const model = {
             {
                 id: 2,
                 name: "Kairo", // string
-                photo: "img/UserID_2/CatID_2/main.jpg",
+                photo: "img/UserID_2/CatID_2/",
                 rating: 9.9, // float
                 givenRatings: [
                     {
@@ -290,7 +290,7 @@ const model = {
             {
                 id: 10,
                 name: "Lefse", // string
-                photo: "img/UserID_9/CatID_10/main.jpg",
+                photo: "img/UserID_9/CatID_10/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -312,7 +312,7 @@ const model = {
             {
                 id: 11,
                 name: "Oscar", // string
-                photo: "img/UserID_2/CatID_11/main.jpg",
+                photo: "img/UserID_2/CatID_11/",
                 rating: 10.0, // float
                 givenRatings: [
                     {
