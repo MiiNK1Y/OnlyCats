@@ -202,7 +202,7 @@ const model = {
             {
                 id: 6,
                 name: "Bilbo Baggins", // string
-                photo: "img/UserID_8/CatID_6/main.jpg",
+                photo: "img/UserID_8/CatID_6/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -224,7 +224,7 @@ const model = {
             {
                 id: 7,
                 name: "Mr Fluffy Paws", // string
-                photo: "img/UserID_10/CatID_7/main.jpg",
+                photo: "img/UserID_10/CatID_7/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -246,7 +246,7 @@ const model = {
             {
                 id: 8,
                 name: "Snarly Mc.Clawkins", // string
-                photo: "img/UserID_7/CatID_8/main.jpg",
+                photo: "img/UserID_7/CatID_8/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -268,7 +268,7 @@ const model = {
             {
                 id: 9,
                 name: "Bubbsy", // string
-                photo: "img/UserID_6/CatID_9/main.jpg",
+                photo: "img/UserID_6/CatID_9/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -496,7 +496,7 @@ const model = {
                 username: "Nyamaster_Master", // string
                 photo: "img/UserID_5/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
-                cats: [2], // list of ID numbers
+                cats: [1], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 5,
@@ -508,8 +508,8 @@ const model = {
                 id: 6,
                 username: "Feline_Fellow06", // string
                 photo: "img/UserID_6/profile.jpg", // path-string
-                about: "Liker katter, spesielt den som ikke er min.", // string
-                cats: [2], // list of ID numbers
+                about: "?", // string
+                cats: [9], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 10,
@@ -521,8 +521,8 @@ const model = {
                 id: 7,
                 username: "TheOneWhoMeows1999", // string
                 photo: "img/UserID_7/profile.jpg", // path-string
-                about: "Liker katter, spesielt den som ikke er min.", // string
-                cats: [2], // list of ID numbers
+                about: "meow meow", // string
+                cats: [8], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 6,
@@ -534,8 +534,8 @@ const model = {
                 id: 8,
                 username: "Purrfect_Owner", // string
                 photo: "img/UserID_8/profile.jpg", // path-string
-                about: "Liker katter, spesielt den som ikke er min.", // string
-                cats: [2], // list of ID numbers
+                about: "Kvinne. 54. Akershus. Bilbo <3 ", // string
+                cats: [6], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 9,
@@ -547,8 +547,8 @@ const model = {
                 id: 9,
                 username: "FurryFuzzman", // string
                 photo: "img/UserID_9/profile.jpg", // path-string
-                about: "Liker katter, spesielt den som ikke er min.", // string
-                cats: [2], // list of ID numbers
+                about: "Jeg liker å kle meg som en katt og hilse på andre som har kledd seg som katter", // string
+                cats: [10], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 7,
@@ -560,8 +560,8 @@ const model = {
                 id: 10,
                 username: "NotAClosetFurry_2", // string
                 photo: "img/UserID_10/profile.jpg", // path-string
-                about: "Liker katter, spesielt den som ikke er min.", // string
-                cats: [2], // list of ID numbers
+                about: "Jeg kler meg ikke ut som en katt.", // string
+                cats: [7], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 8,
