@@ -1,6 +1,5 @@
 
 function viewCatalogue() {
-    
 
     function catalogueElement(img, name) {
         let html = /*HTML*/`
@@ -48,7 +47,7 @@ model.app.html.innerHTML = /*HTML*/ `
     <div class="header_underline"></div>
         <div class="top-cats_container_wrapper">
             <div class="top-cats_container">
-                ${catalog()}
+                ${catalogue()}
             </div>
         </div>
     </div>
