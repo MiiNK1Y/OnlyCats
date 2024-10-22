@@ -180,7 +180,7 @@ const model = {
             {
                 id: 5,
                 name: "McFeast", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_5/CatID_1/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
