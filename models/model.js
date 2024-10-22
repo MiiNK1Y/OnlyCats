@@ -202,7 +202,7 @@ const model = {
             {
                 id: 6,
                 name: "Bilbo Baggins", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_8/CatID_6/main.jpg",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -224,7 +224,7 @@ const model = {
             {
                 id: 7,
                 name: "Mr Fluffy Paws", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_10/CatID_7/main.jpg",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -246,7 +246,7 @@ const model = {
             {
                 id: 8,
                 name: "Snarly Mc.Clawkins", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_7/CatID_8/main.jpg",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -268,7 +268,7 @@ const model = {
             {
                 id: 9,
                 name: "Bubbsy", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_6/CatID_9/main.jpg",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -290,7 +290,7 @@ const model = {
             {
                 id: 10,
                 name: "Lefse", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_9/CatID_10/main.jpg",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -390,12 +390,12 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20220820, // number
+                birthday: 20240802, // number
                 gender: "Han", // string
                 race: "Blandet", // string
-                color: "Gul&Oransje", // string
+                color: "Brun", // string
                 furLength: "Long", // string
-                about: "Han elsker det.", // string
+                about: "Vokser fra jorden.", // string
             },
             {
                 id: 15,
