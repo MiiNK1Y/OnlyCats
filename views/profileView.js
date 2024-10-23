@@ -35,12 +35,7 @@ function viewProfile() {
             <br><br>  <!-- Loop med brukerens vurderinger ? -->
 
             <div class="reviewBody">
-
-                <div class="review"> 
-                    <div class="reviewCatPhoto"> IMG </div>
-                    <div> Kattens navn </div>
-                    <div> 9/10 </div>
-                </div>
+                ${printUserReview()}
             </div>
 
         </div>  
@@ -90,3 +85,24 @@ function printUsersCats() {
     return html;
 }
 
+function printUserReview(){
+    const userID = model.app.currentUser;
+    const indexOfUser = model.data.user.findIndex(user => user.id === userID);
+    const ratingsGiven = model.data.user[indexOfUser].ratingsGiven;
+
+    let html = '';
+    for (let i = 0; i < ratingsGiven.length; i++){
+        const rating = ratingsgiven[i];
+        const indexOfRating = model.data.ratingsGiven.findIndex(a => a.id === ratingsGiven)
+
+
+        html += /*HTML*/ `
+            <div class="review"> 
+                    <div class="reviewCatPhoto"> IMG </div>
+                    <div> Kattens navn </div>
+                    <div> 9/10 </div>
+            </div>
+        `;
+    }
+    return html;
+}
