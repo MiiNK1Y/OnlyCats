@@ -71,6 +71,12 @@ const model = {
                 id: 0,
                 name: "thiccest boy", // string
                 photo: "img/UserID_0/CatID_0/",
+                birthday: 20220811, // number
+                gender: "Han", // string
+                race: "Bengal", // string
+                color: "Hvit", // string
+                furLength: "langhåret", // string
+                about: "Kosen som faen.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -82,17 +88,17 @@ const model = {
                         ratingGiven: 10,
                     },
                 ],
-                birthday: 20220811, // number
-                gender: "Han", // string
-                race: "Bengal", // string
-                color: "Hvit", // string
-                furLength: "langhåret", // string
-                about: "Kosen som faen.", // string
             },
             {
                 id: 1,
                 name: "Sir Meowsallot The First", // string
                 photo: "img/UserID_1/CatID_4/",
+                birthday: 20010710, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Oransje", // string
+                furLength: "langhåret", // string
+                about: "Siste overlevende fra den store atom krisen", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -104,17 +110,17 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20010710, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Oransje", // string
-                furLength: "langhåret", // string
-                about: "Siste overlevende fra den store atom krisen", // string
             },
             {
                 id: 2,
                 name: "Kairo", // string
                 photo: "img/UserID_2/CatID_2/",
+                birthday: 20230324, // number
+                gender: "Hann", // string
+                race: "Bengal", // string
+                color: "Brun og sort", // string
+                furLength: "korthåret", // string
+                about: "Favoritt hobby: Rive ned stua.", // string
                 rating: 9.9, // float
                 givenRatings: [
                     {
@@ -126,17 +132,17 @@ const model = {
                         ratingGiven: 10,
                     },
                 ],
-                birthday: 20230324, // number
-                gender: "Hann", // string
-                race: "Bengal", // string
-                color: "Brun og sort", // string
-                furLength: "korthåret", // string
-                about: "Favoritt hobby: Rive ned stua.", // string
             },
             {
                 id: 3,
                 name: "Larry the Cat&puss", // string
                 photo: "img/UserID_3/CatID_5/",
+                birthday: 20150918, // number
+                gender: "Han", // string
+                race: "Norsk Skogskatt", // string
+                color: "Grå", // string
+                furLength: "langhåret", // string
+                about: "Liker å putte på en hatt og forsvinne tilfeldig, sover mye ellers", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -148,17 +154,17 @@ const model = {
                         ratingGiven: 9,
                     },
                 ],
-                birthday: 20150918, // number
-                gender: "Han", // string
-                race: "Norsk Skogskatt", // string
-                color: "Grå", // string
-                furLength: "langhåret", // string
-                about: "Liker å putte på en hatt og forsvinne tilfeldig, sover mye ellers", // string
             },
             {
                 id: 4,
                 name: "Princess", // string
                 photo: "img/UserID_4/CatID_3/",
+                birthday: 20230215, // number
+                gender: "Hun", // string
+                race: "Perser", // string
+                color: "Hvit", // string
+                furLength: "langhåret", // string
+                about: "Den mest nydelig og perfekte katten av alle :) Spiser bare laks og elsker å klatre på sofaen", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -170,17 +176,17 @@ const model = {
                         ratingGiven: 1,
                     },
                 ],
-                birthday: 20230215, // number
-                gender: "Hun", // string
-                race: "Perser", // string
-                color: "Hvit", // string
-                furLength: "langhåret", // string
-                about: "Den mest nydelig og perfekte katten av alle :) Spiser bare laks og elsker å klatre på sofaen", // string
             },
             {
                 id: 5,
                 name: "McFeast", // string
                 photo: "img/UserID_5/CatID_1/",
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul og Oransje", // string
+                furLength: "langhåret", // string
+                about: "Han elsker det.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -192,17 +198,17 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Gul&Oransje", // string
-                furLength: "langhåret", // string
-                about: "Han elsker det.", // string
             },
             {
                 id: 6,
                 name: "Bilbo Baggins", // string
                 photo: "img/UserID_8/CatID_6/",
+                birthday: 20200117, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Grå", // string
+                furLength: "langhåret", // string
+                about: "Elsker Fisk.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -214,17 +220,17 @@ const model = {
                         ratingGiven: 5,
                     },
                 ],
-                birthday: 20200117, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Grå", // string
-                furLength: "langhåret", // string
-                about: "Elsker Fisk.", // string
             },
             {
                 id: 7,
                 name: "Mr Fluffy Paws", // string
                 photo: "img/UserID_10/CatID_7/",
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Svart", // string
+                furLength: "korthåret", // string
+                about: "Har myke og fantastiske poter.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -236,17 +242,17 @@ const model = {
                         ratingGiven: 9,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Svart", // string
-                furLength: "korthåret", // string
-                about: "Har myke og fantastiske poter.", // string
             },
             {
                 id: 8,
                 name: "Snarly Mc.Clawkins", // string
                 photo: "img/UserID_7/CatID_8/",
+                birthday: 20210811, // number
+                gender: "Hun", // string
+                race: "Blandet", // string
+                color: "Svart og Hvit", // string
+                furLength: "langhåret", // string
+                about: "Jeg får hun ikke ut av huset mitt.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -258,17 +264,17 @@ const model = {
                         ratingGiven: 10,
                     },
                 ],
-                birthday: 20210811, // number
-                gender: "Hun", // string
-                race: "Blandet", // string
-                color: "Svart&Hvit", // string
-                furLength: "langhåret", // string
-                about: "Jeg får hun ikke ut av huset mitt.", // string
             },
             {
                 id: 9,
                 name: "Bubbsy", // string
                 photo: "img/UserID_6/CatID_9/",
+                birthday: 20170518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Brun", // string
+                furLength: "hårløs", // string
+                about: "Something something, katt.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -280,17 +286,17 @@ const model = {
                         ratingGiven: 7,
                     },
                 ],
-                birthday: 20170518, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Brun", // string
-                furLength: "hårløs", // string
-                about: "Something something, katt.", // string
             },
             {
                 id: 10,
                 name: "Lefse", // string
                 photo: "img/UserID_9/CatID_10/",
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul og Hvit", // string
+                furLength: "korthåret", // string
+                about: "Mofse Mofse.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -302,17 +308,17 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Gul&Hvit", // string
-                furLength: "korthåret", // string
-                about: "Mofse Mofse.", // string
             },
             {
                 id: 11,
                 name: "Oscar", // string
                 photo: "img/UserID_2/CatID_11/",
+                birthday: 20240320, // number
+                gender: "Han", // string
+                race: "Ragdoll, hellig birma", // string
+                color: "Hvit og Sort", // string
+                furLength: "langhåret", // string
+                about: "Matvrak. Halvt banshee.", // string
                 rating: 10.0, // float
                 givenRatings: [
                     {
@@ -324,17 +330,17 @@ const model = {
                         ratingGiven: 7,
                     },
                 ],
-                birthday: 20240320, // number
-                gender: "Han", // string
-                race: "Ragdoll, hellig birma", // string
-                color: "Hvit og sort", // string
-                furLength: "langhåret", // string
-                about: "Matvrak. Halvt banshee.", // string
             },
             {
                 id: 12,
                 name: "Oompa", // string
                 photo: "img/UserID_9/CatID_12/",
+                birthday: 20240316, // number
+                gender: "Hun", // string
+                race: "Blandet", // string
+                color: "Gul og Lilla", // string
+                furLength: "langhåret", // string
+                about: "Loompa.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -346,17 +352,17 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20240316, // number
-                gender: "Hun", // string
-                race: "Blandet", // string
-                color: "Gul&Lilla", // string
-                furLength: "langhåret", // string
-                about: "Loompa.", // string
             },
             {
                 id: 13,
                 name: "Poptart", // string
                 photo: "img/UserID_7/CatID_13/",
+                birthday: 20200212, // number
+                gender: "Hun", // string
+                race: "Blandet", // string
+                color: "Rosa", // string
+                furLength: "hårløs", // string
+                about: "Sweet and thick.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -368,17 +374,17 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200212, // number
-                gender: "Hun", // string
-                race: "Blandet", // string
-                color: "Rosa", // string
-                furLength: "hårløs", // string
-                about: "Sweet and thick.", // string
             },
             {
                 id: 14,
                 name: "Potet", // string
                 photo: "img/UserID_8/CatID_14/",
+                birthday: 20240802, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Brun", // string
+                furLength: "langhåret", // string
+                about: "Vokser fra jorden.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -390,17 +396,17 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20240802, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Brun", // string
-                furLength: "langhåret", // string
-                about: "Vokser fra jorden.", // string
             },
             {
                 id: 15,
                 name: "Corn", // string
                 photo: "img/UserID_10/CatID_15/",
+                birthday: 20200518, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Gul", // string
+                furLength: "korthåret", // string
+                about: "Ser lik ut på vei inn, og på vei ut.", // string
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -412,12 +418,6 @@ const model = {
                         ratingGiven: 8,
                     },
                 ],
-                birthday: 20200518, // number
-                gender: "Han", // string
-                race: "Blandet", // string
-                color: "Gul", // string
-                furLength: "korthåret", // string
-                about: "Ser lik ut på vei inn, og på vei ut.", // string
             },
         ],
 
