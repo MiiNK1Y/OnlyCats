@@ -17,7 +17,7 @@ function catalogue() {
     let cats = model.data.cat;
     let html = "";
 
-    for (let i = 0; i < 10; i++) { // limit cap the cats, wait for more cats to be added in dirs.
+    for (let i = 0; i < cats.length; i++) { // limit cap the cats, wait for more cats to be added in dirs.
         const img = cats[i].photo;
         const name = cats[i].name;
 
