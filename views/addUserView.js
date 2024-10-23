@@ -1,22 +1,32 @@
-
 // KAMILLA
 
 function updateAddUserView() {
-
-    let html = /* HTML */`
-    ${viewNavigationBar()}
+    let html = /* HTML */ `
+        ${viewNavigationBar()}
         <div class="addUserContainer">
             <div>Lag ny bruker</div>
             <div class="addUserbox">
                 <div>Brukernavn:</div>
-                <input placeholder="Ditt brukernavn"/>
+                <input
+                    placeholder="Ditt brukernavn"
+                    onchange="model.input.signUp.username = this.value"
+                />
                 <div>Mailadresse:</div>
-                <input placeholder="Din mailadresse"/>
+                <input
+                    placeholder="Din mailadresse"
+                    onchange="model.input.signUp.email = this.value"
+                />
                 <div>Passord:</div>
-                <input placeholder="Ditt passord"/>
-                <input placeholder="Gjenta passord"/>
+                <input
+                    placeholder="Ditt passord"
+                    onchange="model.input.signUp.password = this.value"
+                />
+                <input
+                    placeholder="Gjenta passord"
+                    onchange="model.input.signUp.repeatPassword = this.value"
+                />
             </div>
-            <div> <button onclick="addUser()">Lag ny bruker</button> </div>
+            <div><button onclick="addUser()">Lag ny bruker</button></div>
         </div>
     `;
     return html;
