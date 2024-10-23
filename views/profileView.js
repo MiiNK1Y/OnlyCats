@@ -2,14 +2,12 @@
 // BETHINA
 
 function viewProfile(){  
-
     let html = /*HTML*/`
-    ${viewNavigationBar()}
-
-    <div class="userContainer">
+    
+    <div class="userContainer" style="color: white;">
         
         <div class= "userPhotoContainer"> 
-            <div class="profilePhoto"> Her kommer profilbilde </div>
+            <div class="profilePhoto"> Profilbilde </div>
             <div> <button onclick="editProfile()"> Rediger profil </button> </div>
             <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
         </div>
@@ -26,30 +24,9 @@ function viewProfile(){
                 @brukernavns katter: 
             </div>
             <hr>
-            <br><br>   <!-- Loop med brukerens katter ? -->
-            <div class="usersCats">
-                <div class="userCatPhoto"> IMG </div> 
-                <div class="catNameScore">
-                    <div> Kattens navn </div>
-                    <div> 9/10 </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="usersCats">
-                <div class="userCatPhoto"> IMG </div> 
-                <div class="catNameScore">
-                    <div> Kattens navn </div>
-                    <div> 9/10 </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="usersCats">
-                <div class="userCatPhoto"> IMG </div> 
-                <div class="catNameScore">
-                    <div> Kattens navn </div>
-                    <div> 9/10 </div>
-                </div>
-            </div>
+            
+            ${printUsersCats()}
+            
         </div>
 
         <div class="reviewContainer">
@@ -64,31 +41,6 @@ function viewProfile(){
                     <div> Kattens navn </div>
                     <div> 9/10 </div>
                 </div>
-
-                <div class="review"> 
-                    <div class="reviewCatPhoto"> IMG </div>
-                    <div> Kattens navn </div>
-                    <div> 10/10 </div>
-                </div>
-
-                <div class="review"> 
-                    <div class="reviewCatPhoto"> IMG </div>
-                    <div> Kattens navn </div>
-                    <div> 4/10 </div>
-                </div>
-
-                <div class="review"> 
-                    <div class="reviewCatPhoto"> IMG </div>
-                    <div> Kattens navn </div>
-                    <div> 7/10 </div>
-                </div>
-
-                <div class="review"> 
-                    <div class="reviewCatPhoto"> IMG </div>
-                    <div> Kattens navn </div>
-                    <div> 2/10 </div>
-                </div>
-
             </div>
 
         </div>  
@@ -96,5 +48,36 @@ function viewProfile(){
     </div>
 
     `;
+    return html;
+}
+
+const currentAccount = model.app.currentUser;
+const indexOfUserID = function(){};
+
+// henter brukers katter basert på bruker-ID
+function getUserCats(currentAccount){
+    return model.data.cat.filter(function(cat){ 
+        return model.data.user.cats;
+    })
+}
+
+
+function printUsersCats(userID){
+    let html = '';
+    let userCats = getUserCats(userID); // henter kattene til brukeren
+    console.log(userCats);
+
+    for (let i = 0; i < userCats.length; i++) {
+        let cat = userCats[i];
+        html += /*HTML*/ `
+        <div class="usersCats">
+                <div class="userCatPhoto"> <img src="${cat.photo}"/> </div> 
+                <div class="catNameScore">
+                    <div> ${cat.name} </div>
+                    <div> ${cat.rating} / 10 </div>
+                </div>
+            </div>
+        `;
+    }
     return html;
 }
