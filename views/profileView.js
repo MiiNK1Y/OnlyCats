@@ -1,7 +1,7 @@
 
 // BETHINA
 
-function viewProfile(){  
+function viewProfile() {
     let html = /*HTML*/`
     
     <div class="userContainer" style="color: white;">
@@ -51,21 +51,20 @@ function viewProfile(){
     return html;
 }
 
-const currentAccount = model.app.currentUser;
-const indexOfUserID = function(){};
+//const indexOfUserID = function(){};
+//
+//// henter brukers katter basert på bruker-ID
+//function getUserCats(currentAccount){
+//    return model.data.cat.filter(function(cat){ 
+//        return model.data.user.cats;
+//    })
+//}
 
-// henter brukers katter basert på bruker-ID
-function getUserCats(currentAccount){
-    return model.data.cat.filter(function(cat){ 
-        return model.data.user.cats;
-    })
-}
+const userID = model.app.currentUser;
 
-
-function printUsersCats(userID){
+function printUsersCats(userID) {
     let html = '';
     let userCats = getUserCats(userID); // henter kattene til brukeren
-    console.log(userCats);
 
     for (let i = 0; i < userCats.length; i++) {
         let cat = userCats[i];
@@ -81,3 +80,9 @@ function printUsersCats(userID){
     }
     return html;
 }
+
+function getUserCats() {
+    const indexOfUser = model.data.user.findIndex(user => user.id === userID);
+    return model.data.user[indexOfUser].cats;
+}
+
