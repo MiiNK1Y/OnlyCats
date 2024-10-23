@@ -2,7 +2,7 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
-        currentUser: 0, // user ID of user.
+        currentUser: 2, // user ID of user.
 
         currentPage: "login",
 
@@ -453,14 +453,18 @@ const model = {
                 username: "bbthina", // string
                 photo: "img/UserID_2/profile.jpg", // path-string
                 about: "Slowly making my way to becoming a crazy catlady", // string
-                cats: [1, 11], // list of ID numbers
+                cats: [2, 11], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 1,
-                        rating: 10, // number
+                        rating: 7, // number
                     },
                     {
                         catID: 11,
+                        rating: 10, // number
+                    },
+                    {
+                        catID: 2,
                         rating: 10, // number
                     },
                 ],
