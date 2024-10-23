@@ -428,12 +428,6 @@ const model = {
                 photo: "img/UserID_0/profile.jpg", // path-string
                 about: "love my thicc boi.", // string
                 cats: [0], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 3,
-                        rating: 9, // number
-                    },
-                ],
             },
             {
                 id: 1,
@@ -441,12 +435,6 @@ const model = {
                 photo: "img/UserID_1/profile.jpg", // path-string
                 about: "Katte ekspert og frilufts pro.", // string
                 cats: [4], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 0,
-                        rating: 7, // number
-                    },
-                ],
             },
             {
                 id: 2,
@@ -454,20 +442,6 @@ const model = {
                 photo: "img/UserID_2/profile.jpg", // path-string
                 about: "Slowly making my way to becoming a crazy catlady", // string
                 cats: [2, 11], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 1,
-                        rating: 7, // number
-                    },
-                    {
-                        catID: 11,
-                        rating: 10, // number
-                    },
-                    {
-                        catID: 2,
-                        rating: 10, // number
-                    },
-                ],
             },
             {
                 id: 3,
@@ -475,12 +449,6 @@ const model = {
                 photo: "img/UserID_3/profile.jpg", // path-string
                 about: "Jeg elsker katter mest av alt, eller, nesten like mye som jeg elsker en god burger", // string
                 cats: [5], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 4,
-                        rating: 1, // number
-                    },
-                ],
             },
             {
                 id: 4,
@@ -488,12 +456,6 @@ const model = {
                 photo: "img/UserID_4/profile.jpg", // path-string
                 about: " I love a good pussy.", // string
                 cats: [3], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 0,
-                        rating: 10, // number
-                    },
-                ],
             },
             {
                 id: 5,
@@ -501,12 +463,6 @@ const model = {
                 photo: "img/UserID_5/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [1], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 5,
-                        rating: 8, // number
-                    },
-                ],
             },
             {
                 id: 6,
@@ -514,64 +470,34 @@ const model = {
                 photo: "img/UserID_6/profile.jpg", // path-string
                 about: "?", // string
                 cats: [9], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 10,
-                        rating: 8, // number
-                    },
-                ],
             },
             {
                 id: 7,
                 username: "TheOneWhoMeows1999", // string
                 photo: "img/UserID_7/profile.jpg", // path-string
                 about: "meow meow", // string
-                cats: [8,13], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 6,
-                        rating: 6, // number
-                    },
-                ],
+                cats: [8, 13], // list of ID numbers
             },
             {
                 id: 8,
                 username: "Purrfect_Owner", // string
                 photo: "img/UserID_8/profile.jpg", // path-string
                 about: "Kvinne. 54. Akershus. Bilbo <3 ", // string
-                cats: [6,14], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 9,
-                        rating: 3, // number
-                    },
-                ],
+                cats: [6, 14], // list of ID numbers
             },
             {
                 id: 9,
                 username: "FurryFuzzman", // string
                 photo: "img/UserID_9/profile.jpg", // path-string
                 about: "Jeg liker å kle meg som en katt og hilse på andre som har kledd seg som katter", // string
-                cats: [10,12], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 7,
-                        rating: 6, // number
-                    },
-                ],
+                cats: [10, 12], // list of ID numbers
             },
             {
                 id: 10,
                 username: "NotAClosetFurry_2", // string
                 photo: "img/UserID_10/profile.jpg", // path-string
                 about: "Jeg kler meg ikke ut som en katt.", // string
-                cats: [7,15], // list of ID numbers
-                ratingsGiven: [
-                    {
-                        catID: 8,
-                        rating: 2, // number
-                    },
-                ],
+                cats: [7, 15], // list of ID numbers
             },
         ],
     },
