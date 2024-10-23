@@ -49,7 +49,7 @@ button:hover {
 }
 
 #app {
-    height: 100%;
+    height: 100vh;
 }
 
 /* -------------- NAVIGATION BAR --------------*/
@@ -173,7 +173,7 @@ input {
 /* -------------- LOGIN --------------*/
 .login_container {
     text-align: center;
-    margin-top: 300px;
+    height: 80%;
     gap: 20px;
 }
 
@@ -195,4 +195,12 @@ input {
     font-size: 1.5em;
     border-radius: 10px;
     padding: 10px;
+}
+
+/*---------CATALOGUE---------*/
+.filter_buttons button {}
+
+.cats_container {
+    display: flex;
+    gap: 10px;
 }

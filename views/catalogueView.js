@@ -1,9 +1,35 @@
-
-function viewCatalogue() {
-
+function catalogue() {
     function catalogueElement(img, name) {
         let html = /*HTML*/`
-        <div class="filterButtons">
+            <div>
+                <div class="catalogue_container">
+                    <div class="catalogue_img-container">
+                        <img src="${img}/main.jpg" />
+                    </div>
+                    <div class="name">${name}</div>
+                </div>
+            </div>
+        `;
+
+        return html;
+    };
+
+    let cats = model.data.cat;
+    let html = "";
+
+    for (let i = 0; i < 10; i++) { // limit cap the cats, wait for more cats to be added in dirs.
+        const img = cats[i].photo;
+        const name = cats[i].name;
+
+        html += catalogueElement(img, name);
+    }
+
+    return html;
+}
+
+function viewCatalogue() {
+    const html = /*HTML*/`
+        <div class="filter_buttons">
             <div> Sorter etter:
             <button>Sist lagt til</button>
             <button>Mest populær</button>
@@ -15,40 +41,17 @@ function viewCatalogue() {
             <button>Navn Å-A</button>
             <button>Rase</button>
         </div> 
-        </div>
-            <div class="catalogue_container">
-                <div class="catalogue_img-container">
-                    <img src="${img}/main.jpg" />
+        <div class="catalogue_container">
+        <h1>Kattalog!</h1>
+        <div class="header_underline"></div>
+            <div class="top-cats_container_wrapper">
+                <div class="cats_container">
+                    ${catalogue()}
                 </div>
-                <div class="name">${name}</div>
             </div>
-        `;
+        </div>
+    `;
 
-        return html;
-    };
-
-    let cats = model.data.cat;
-    
-    let html = "";
-
-    for (let i = 0; i < cats.length; i++) {
-        let img = cats[i].photo;
-        let name = cats[i].name;
-
-        html += catalogueElement(img, name);
-    }
-    
     return html;
 }
 
-model.app.html.innerHTML = /*HTML*/ `
-    <div class="catalogue_container">
-    <h1>Kattalog!</h1>
-    <div class="header_underline"></div>
-        <div class="top-cats_container_wrapper">
-            <div class="top-cats_container">
-                ${catalogue()}
-            </div>
-        </div>
-    </div>
-    `;
