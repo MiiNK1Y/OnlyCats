@@ -60,29 +60,33 @@ function viewProfile() {
 //    })
 //}
 
-const userID = model.app.currentUser;
 
-function printUsersCats(userID) {
+function printUsersCats() {
+    const userID = model.app.currentUser;
+    const indexOfUser = model.data.user.findIndex(user => user.id === userID);
+    const cats = model.data.user[indexOfUser].cats;
+
     let html = '';
-    let userCats = getUserCats(userID); // henter kattene til brukeren
+    for (let i = 0; i < cats.length; i++) {
 
-    for (let i = 0; i < userCats.length; i++) {
-        let cat = userCats[i];
+        // finding the cat
+        const cat = cats[i];
+        const indexOfCats = model.data.cat.findIndex(c => c.id === cat);
+
+        // getting the cat object
+        const curCat = model.data.cat[indexOfCats];
+
         html += /*HTML*/ `
-        <div class="usersCats">
-                <div class="userCatPhoto"> <img src="${cat.photo}"/> </div> 
+            <div class="usersCats">
+                <div class="userCatPhoto"> <img src="${curCat.photo}/main.jpg"/> </div> 
                 <div class="catNameScore">
-                    <div> ${cat.name} </div>
-                    <div> ${cat.rating} / 10 </div>
+                    <div> ${curCat.name} </div>
+                    <div> ${curCat.rating} / 10 </div>
                 </div>
             </div>
         `;
     }
-    return html;
-}
 
-function getUserCats() {
-    const indexOfUser = model.data.user.findIndex(user => user.id === userID);
-    return model.data.user[indexOfUser].cats;
+    return html;
 }
 
