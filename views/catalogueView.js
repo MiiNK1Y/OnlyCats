@@ -31,18 +31,19 @@ function viewCatalogue() {
     const html = /*HTML*/`
         <div class="filter_buttons">
             <div> Sorter etter:
-            <button>Sist lagt til</button>
-            <button>Mest populær</button>
-            <button>Tilfeldig</button>
-            <button>Alder</button>
-            <button>Kjønn</button>
-            <button>Farge</button>
-            <button>Navn A-Å</button>
-            <button>Navn Å-A</button>
-            <button>Rase</button>
+            <button onclick="lastAdded()">Sist lagt til</button>
+            <button onclick="mostPopular()">Mest populær</button>
+            <button onclick="random()">Tilfeldig</button>
+            <button onclick="sortAge()">Alder</button>
+            <button onclick="sortGender()">Kjønn</button>
+            <button onclick="sortColour()">Farge</button>
+            <button onclick="sortNameAlphabetical()">Navn A-Å</button>
+            <button onclick="sortNameReverse()">Navn Å-A</button>
+            <button onclick="sortBreed()">Rase</button>
         </div> 
+        
         <div class="catalogue_container">
-        <h1>Kattalog!</h1>
+        <h1>Kattalog</h1>
         <div class="header_underline"></div>
             <div class="top-cats_container_wrapper">
                 <div class="cats_container">

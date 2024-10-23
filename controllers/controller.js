@@ -45,6 +45,3 @@ function viewCatalogue() {
     updateView();
 }
 
-function sortCatalogue() {
-    // code here
-}
