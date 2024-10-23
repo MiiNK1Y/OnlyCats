@@ -92,7 +92,7 @@ function printUserReview(){
 
     let html = '';
     for (let i = 0; i < ratingsGiven.length; i++){
-        const rating = ratingsgiven[i];
+        const rating = ratingsGiven[i];
         const indexOfRating = model.data.ratingsGiven.findIndex(a => a.id === ratingsGiven)
 
 
