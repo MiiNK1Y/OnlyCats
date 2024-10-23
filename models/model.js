@@ -334,7 +334,7 @@ const model = {
             {
                 id: 12,
                 name: "Oompa", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_9/CatID_12/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -356,7 +356,7 @@ const model = {
             {
                 id: 13,
                 name: "Poptart", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_7/CatID_13/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -378,7 +378,7 @@ const model = {
             {
                 id: 14,
                 name: "Potet", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_8/CatID_14/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -400,7 +400,7 @@ const model = {
             {
                 id: 15,
                 name: "Corn", // string
-                photo: "img/UserID_5/CatID_2/",
+                photo: "img/UserID_10/CatID_15/",
                 rating: 8.3, // float
                 givenRatings: [
                     {
@@ -522,7 +522,7 @@ const model = {
                 username: "TheOneWhoMeows1999", // string
                 photo: "img/UserID_7/profile.jpg", // path-string
                 about: "meow meow", // string
-                cats: [8], // list of ID numbers
+                cats: [8,13], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 6,
@@ -535,7 +535,7 @@ const model = {
                 username: "Purrfect_Owner", // string
                 photo: "img/UserID_8/profile.jpg", // path-string
                 about: "Kvinne. 54. Akershus. Bilbo <3 ", // string
-                cats: [6], // list of ID numbers
+                cats: [6,14], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 9,
@@ -548,7 +548,7 @@ const model = {
                 username: "FurryFuzzman", // string
                 photo: "img/UserID_9/profile.jpg", // path-string
                 about: "Jeg liker å kle meg som en katt og hilse på andre som har kledd seg som katter", // string
-                cats: [10], // list of ID numbers
+                cats: [10,12], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 7,
@@ -561,7 +561,7 @@ const model = {
                 username: "NotAClosetFurry_2", // string
                 photo: "img/UserID_10/profile.jpg", // path-string
                 about: "Jeg kler meg ikke ut som en katt.", // string
-                cats: [7], // list of ID numbers
+                cats: [7,15], // list of ID numbers
                 ratingsGiven: [
                     {
                         catID: 8,
