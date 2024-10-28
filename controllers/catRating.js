@@ -21,5 +21,5 @@ function setRatings() {
 }
 
 window.onload = () => {
-    setRatings();
+    setTimeout(setRatings(), 500);
 }
