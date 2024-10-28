@@ -4,12 +4,13 @@
 function viewProfile() {
     let username = model.data.user[model.app.currentUser].username;
     let bio = model.data.user[model.app.currentUser].about;
+    let profilePhoto = model.data.user[model.app.currentUser].photo;
     let html = /*HTML*/`
     
     <div class="userContainer" style="color: white;">
         
         <div class= "userPhotoContainer"> 
-            <div class="profilePhoto"> Profilbilde </div>
+            <div class="profilePhoto"> <img src="${profilePhoto}" /></div>
             <div> <button onclick="editProfile()"> Rediger profil </button> </div>
             <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
         </div>

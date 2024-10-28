@@ -140,7 +140,7 @@ const model = {
                         ratingGiven: 10,
                     },
                     {
-                        userID: 10,
+                        userID: 2,
                         ratingGiven: 10,
                     },
                 ],
@@ -162,7 +162,7 @@ const model = {
                         ratingGiven: 2,
                     },
                     {
-                        userID: 2,
+                        userID: 5,
                         ratingGiven: 10,
                     },
                     {
@@ -448,7 +448,7 @@ const model = {
                     },
                     {
                         userID: 2,
-                        ratingGiven: 5,
+                        ratingGiven: 4,
                     },
                     {
                         userID: 6,
@@ -478,10 +478,10 @@ const model = {
                     },
                     {
                         userID: 2,
-                        ratingGiven: 4,
+                        ratingGiven: 6,
                     },
                     {
-                        userID: 2,
+                        userID: 8,
                         ratingGiven: 3,
                     },
                     {
