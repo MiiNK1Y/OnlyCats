@@ -2,9 +2,21 @@
 // BETHINA
 
 function viewProfile() {
+    let currentUser = model.app.currentUser;
+    let user = model.data.user.find(user => user.id === currentUser);
+    
+    if (user) {
+        return printCurrentUsersProfile(user);
+    } else {
+        return printAnotherUsersProfile();
+    }
+}
+
+function printCurrentUsersProfile(){
     let username = model.data.user[model.app.currentUser].username;
     let bio = model.data.user[model.app.currentUser].about;
     let profilePhoto = model.data.user[model.app.currentUser].photo;
+
     let html = /*HTML*/`
     
     <div class="userContainer" style="color: white;">
@@ -13,6 +25,52 @@ function viewProfile() {
             <div class="profilePhoto"> <img src="${profilePhoto}" /></div>
             <div> <button onclick="editProfile()"> Rediger profil </button> </div>
             <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
+        </div>
+
+        <div class="userTxtContainer">
+            <div> ${username} </div>
+            <hr>
+            <div class="bio"> 
+               ${bio}
+            </div>
+            <br><br>
+            <div> 
+                Dine katter: 
+            </div>
+            <hr>
+            
+            ${printUsersCats()}
+            
+        </div>
+        
+        <br><br>
+
+        <div class="reviewContainer">
+            <div class="reviewHeader"> Dine vurderinger: </div>
+
+            <div class="reviewBody">
+                ${printUserReviews()}
+            </div>
+
+        </div>  
+
+    </div>
+
+    `;
+    return html;
+}
+
+function printAnotherUsersProfile(){
+    let username = '';
+    let bio = '';
+    let profilePhoto = '';
+    
+    let html = /*HTML*/`
+    
+    <div class="userContainer" style="color: white;">
+        
+        <div class= "userPhotoContainer"> 
+            <div class="profilePhoto"> <img src="${profilePhoto}" /></div>
         </div>
 
         <div class="userTxtContainer">
@@ -47,6 +105,8 @@ function viewProfile() {
     `;
     return html;
 }
+
+
 
 function printUsersCats() {
     const userID = model.app.currentUser;

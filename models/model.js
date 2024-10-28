@@ -18,6 +18,7 @@ const model = {
             "edit user",
             "add cat",
             "edit cat",
+            "catCard",
         ],
     },
 
