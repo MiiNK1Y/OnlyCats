@@ -77,15 +77,15 @@ const model = {
                 color: "Hvit", // string
                 furLength: "langhåret", // string
                 about: "Kosen som faen.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 7,
+                        ratingGiven: 9,
                     },
                     {
                         userID: 4,
-                        ratingGiven: 10,
+                        ratingGiven: 7,
                     },
                 ],
             },
@@ -99,7 +99,7 @@ const model = {
                 color: "Oransje", // string
                 furLength: "langhåret", // string
                 about: "Siste overlevende fra den store atom krisen", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
@@ -121,14 +121,26 @@ const model = {
                 color: "Brun og sort", // string
                 furLength: "korthåret", // string
                 about: "Favoritt hobby: Rive ned stua.", // string
-                rating: 9.9, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 8,
+                        ratingGiven: 10,
                     },
                     {
-                        userID: 2,
+                        userID: 7,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 6,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 9,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 10,
                         ratingGiven: 10,
                     },
                 ],
@@ -143,37 +155,54 @@ const model = {
                 color: "Grå", // string
                 furLength: "langhåret", // string
                 about: "Liker å putte på en hatt og forsvinne tilfeldig, sover mye ellers", // string
-                rating: 8.3, // float
-                givenRatings: [
-                    {
-                        userID: 1,
-                        ratingGiven: 7,
-                    },
-                    {
-                        userID: 2,
-                        ratingGiven: 9,
-                    },
-                ],
-            },
-            {
-                id: 4,
-                name: "Princess", // string
-                photo: "img/UserID_4/CatID_3/",
-                birthday: 20230215, // number
-                gender: "Hun", // string
-                race: "Perser", // string
-                color: "Hvit", // string
-                furLength: "langhåret", // string
-                about: "Den mest nydelig og perfekte katten av alle :) Spiser bare laks og elsker å klatre på sofaen", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
                         ratingGiven: 2,
                     },
                     {
-                        userID: 3,
-                        ratingGiven: 1,
+                        userID: 2,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 2,
+                    },
+                ],
+            },
+            {
+                id: 4,
+                name: "Mikel", // string
+                photo: "img/UserID_4/CatID_3/",
+                birthday: 20230215, // number
+                gender: "Han", // string
+                race: "Blandet", // string
+                color: "Oransje&Hvit", // string
+                furLength: "langhåret", // string
+                about: "Koselig pus som elsker ostepop og vafler", // string
+                rating: null, // float
+                givenRatings: [
+                    {
+                        userID: 1,
+                        ratingGiven: 9,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 9,
+                        
+                    },
+                    {
+                        userID: 10,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 9,
+                        ratingGiven: 8,
+                    },
+                    {
+                        userID: 8,
+                        ratingGiven: 8,
                     },
                 ],
             },
@@ -187,15 +216,31 @@ const model = {
                 color: "Gul og Oransje", // string
                 furLength: "langhåret", // string
                 about: "Han elsker det.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 2,
+                    },
+                    {
+                        userID: 3,
+                        ratingGiven: 5,
+                    },
+                    {
+                        userID: 4,
                         ratingGiven: 9,
                     },
                     {
                         userID: 5,
-                        ratingGiven: 8,
+                        ratingGiven: 3,
+                    },
+                    {
+                        userID: 6,
+                        ratingGiven: 4,
                     },
                 ],
             },
@@ -209,11 +254,15 @@ const model = {
                 color: "Grå", // string
                 furLength: "langhåret", // string
                 about: "Elsker Fisk.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 6,
                         ratingGiven: 2,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 7,
                     },
                     {
                         userID: 7,
@@ -231,15 +280,15 @@ const model = {
                 color: "Svart", // string
                 furLength: "korthåret", // string
                 about: "Har myke og fantastiske poter.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 8,
-                        ratingGiven: 9,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 9,
-                        ratingGiven: 9,
+                        ratingGiven: 8,
                     },
                 ],
             },
@@ -253,11 +302,11 @@ const model = {
                 color: "Svart og Hvit", // string
                 furLength: "langhåret", // string
                 about: "Jeg får hun ikke ut av huset mitt.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 10,
-                        ratingGiven: 5,
+                        ratingGiven: 1,
                     },
                     {
                         userID: 4,
@@ -275,15 +324,19 @@ const model = {
                 color: "Brun", // string
                 furLength: "hårløs", // string
                 about: "Something something, katt.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 5,
-                        ratingGiven: 6,
+                        ratingGiven: 4,
+                    },
+                    {
+                        userID: 10,
+                        ratingGiven: 7,
                     },
                     {
                         userID: 2,
-                        ratingGiven: 7,
+                        ratingGiven: 6,
                     },
                 ],
             },
@@ -297,15 +350,15 @@ const model = {
                 color: "Gul og Hvit", // string
                 furLength: "korthåret", // string
                 about: "Mofse Mofse.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 4,
+                        ratingGiven: 1,
                     },
                     {
                         userID: 5,
-                        ratingGiven: 8,
+                        ratingGiven: 1,
                     },
                 ],
             },
@@ -319,15 +372,27 @@ const model = {
                 color: "Hvit og Sort", // string
                 furLength: "langhåret", // string
                 about: "Matvrak. Halvt banshee.", // string
-                rating: 10.0, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 8,
-                        ratingGiven: 8,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 3,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 4,
+                        ratingGiven: 10,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 10,
                     },
                     {
                         userID: 2,
-                        ratingGiven: 7,
+                        ratingGiven: 10,
                     },
                 ],
             },
@@ -341,15 +406,19 @@ const model = {
                 color: "Gul og Lilla", // string
                 furLength: "langhåret", // string
                 about: "Loompa.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 9,
+                        ratingGiven: 4,
+                    },
+                    {
+                        userID: 3,
+                        ratingGiven: 3,
                     },
                     {
                         userID: 5,
-                        ratingGiven: 8,
+                        ratingGiven: 4,
                     },
                 ],
             },
@@ -363,11 +432,27 @@ const model = {
                 color: "Rosa", // string
                 furLength: "hårløs", // string
                 about: "Sweet and thick.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 7,
-                        ratingGiven: 9,
+                        ratingGiven: 6,
+                    },
+                    {
+                        userID: 5,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 3,
+                        ratingGiven: 6,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 5,
+                    },
+                    {
+                        userID: 6,
+                        ratingGiven: 7,
                     },
                     {
                         userID: 9,
@@ -385,15 +470,23 @@ const model = {
                 color: "Brun", // string
                 furLength: "langhåret", // string
                 about: "Vokser fra jorden.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 8,
+                        ratingGiven: 4,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 4,
+                    },
+                    {
+                        userID: 2,
+                        ratingGiven: 3,
                     },
                     {
                         userID: 5,
-                        ratingGiven: 8,
+                        ratingGiven: 6,
                     },
                 ],
             },
@@ -407,15 +500,15 @@ const model = {
                 color: "Gul", // string
                 furLength: "korthåret", // string
                 about: "Ser lik ut på vei inn, og på vei ut.", // string
-                rating: 8.3, // float
+                rating: null, // float
                 givenRatings: [
                     {
                         userID: 3,
-                        ratingGiven: 9,
+                        ratingGiven: 3,
                     },
                     {
                         userID: 7,
-                        ratingGiven: 8,
+                        ratingGiven: 3,
                     },
                 ],
             },
