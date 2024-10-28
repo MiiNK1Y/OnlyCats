@@ -7,7 +7,7 @@ function viewHomeButton(){
 }
 
 function viewProfileButton(){
-    model.app.currentPage = "user profile";
+    model.app.currentPage = "profilePage";
 }
 
 function viewCatButton(){
@@ -19,5 +19,24 @@ function viewRatingCardButton() {
 }
 
 function viewNewCatCardButton(){
+    // code here
+}
+
+
+
+// CAT CARD 
+function exitCard(){
+    // code here
+}
+
+function goRight(){
+    // code here
+}
+
+function goLeft() {
+    // code here
+}
+
+function viewAnotherUsersProfile(){ // ??
     // code here
 }

@@ -2,6 +2,8 @@
 // BETHINA
 
 function viewProfile() {
+    let username = model.data.user[model.app.currentUser].username;
+    let bio = model.data.user[model.app.currentUser].about;
     let html = /*HTML*/`
     
     <div class="userContainer" style="color: white;">
@@ -13,15 +15,14 @@ function viewProfile() {
         </div>
 
         <div class="userTxtContainer">
-            <div> @brukernavn </div>
+            <div> ${username} </div>
             <hr>
             <div class="bio"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               ${bio}
             </div>
             <br><br>
             <div> 
-                @brukernavns katter: 
+                ${username} sine katter: 
             </div>
             <hr>
             
@@ -32,7 +33,7 @@ function viewProfile() {
         <br><br>
 
         <div class="reviewContainer">
-            <div class="reviewHeader"> Dine vurderinger </div>
+            <div class="reviewHeader"> Vurderinger ${username} har gitt: </div>
 
             <div class="reviewBody">
                 ${printUserReviews()}
@@ -109,4 +110,3 @@ function printUserReviews() {
     }
     return html;
 }
-
