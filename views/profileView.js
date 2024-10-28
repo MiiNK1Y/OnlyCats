@@ -28,14 +28,14 @@ function viewProfile() {
             ${printUsersCats()}
             
         </div>
+        
+        <br><br>
 
         <div class="reviewContainer">
             <div class="reviewHeader"> Dine vurderinger </div>
 
-            <br><br>  <!-- Loop med brukerens vurderinger ? -->
-
             <div class="reviewBody">
-                ${printUserReview()}
+                ${printUserReviews()}
             </div>
 
         </div>  
@@ -45,16 +45,6 @@ function viewProfile() {
     `;
     return html;
 }
-
-//const indexOfUserID = function(){};
-//
-//// henter brukers katter basert på bruker-ID
-//function getUserCats(currentAccount){
-//    return model.data.cat.filter(function(cat){ 
-//        return model.data.user.cats;
-//    })
-//}
-
 
 function printUsersCats() {
     const userID = model.app.currentUser;
@@ -85,24 +75,38 @@ function printUsersCats() {
     return html;
 }
 
-function printUserReview(){
-    const userID = model.app.currentUser;
-    const indexOfUser = model.data.user.findIndex(user => user.id === userID);
-    const ratingsGiven = model.data.user[indexOfUser].ratingsGiven;
-
+function printUserReviews() {
+    const userID = model.app.currentUser; 
     let html = '';
-    for (let i = 0; i < ratingsGiven.length; i++){
-        const rating = ratingsGiven[i];
-        const indexOfRating = model.data.ratingsGiven.findIndex(a => a.id === ratingsGiven)
 
+    // Looper gjennom alle katter i modellen
+    for (let i = 0; i < model.data.cat.length; i++) {
+        const curCat = model.data.cat[i];
 
-        html += /*HTML*/ `
-            <div class="review"> 
-                    <div class="reviewCatPhoto"> IMG </div>
-                    <div> Kattens navn </div>
-                    <div> 9/10 </div>
-            </div>
-        `;
+        // Filtrerer vurderinger som er gitt av currentUserID
+        const userRatings = curCat.givenRatings.filter(rating => rating.userID === userID);
+
+        // Hvis currentUserID har gitt en vurdering 
+        if (userRatings.length > 0) {
+            html += /*HTML*/ `
+                <div class= "outerContainer">
+                    `;
+                    // Looper gjennom alle vurderinger som den nåværende brukeren har gitt
+                    userRatings.forEach(rating => {
+
+                        html += /*HTML*/ `
+                            <div class="review">
+                                <div> <img src="${curCat.photo}/main.jpg"/> </div>
+                                <div> ${curCat.name} </div>
+                                <div> ${rating.ratingGiven} / 10 </div>
+                            </div>
+                        `;
+                    });
+                    html += /*HTML*/ `
+                </div>
+            `;
+        }
     }
     return html;
 }
+

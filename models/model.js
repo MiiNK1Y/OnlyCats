@@ -4,7 +4,7 @@ const model = {
 
         currentUser: 2, // user ID of user.
 
-        currentPage: "login",
+        currentPage: "profilePage",
 
         page: [
             "home",
