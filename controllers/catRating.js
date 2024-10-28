@@ -7,7 +7,7 @@ function getMedian(ratings) {
 
     const median = num / ratings.length;
 
-    return median;
+    return Number(median.toFixed(1));
 }
 
 function setRatings() {
@@ -16,10 +16,6 @@ function setRatings() {
         cat.rating = getMedian(cat.givenRatings);
         console.log(cat.name, cat.rating);
     }
-
-    updateView();
 }
 
-window.onload = () => {
-    setTimeout(setRatings(), 500);
-}
+setRatings();
