@@ -16,6 +16,8 @@ function setRatings() {
         cat.rating = getMedian(cat.givenRatings);
         console.log(cat.name, cat.rating);
     }
+
+    updateView();
 }
 
 window.onload = () => {
