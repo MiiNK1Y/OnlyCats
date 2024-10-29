@@ -2,7 +2,7 @@ function addNewUser() {
     if (validateInput()) {
         createAndAddUser();
         resetInputs();
-        model.app.currentPage = "add user"; //?
+        model.app.currentPage = "login"; //?
     }
     updateView();
 }
@@ -40,12 +40,12 @@ function validateSignUpFields() {
 
 function validateInput() {
     if (validateSignUpFields()) {
-        //Husk å fylle inn alle felter
+        model.app.errorMessage = "Husk å fylle inn alle felter";
         return false;
     } else if (validatePassword()) {
         return true;
     } else {
-        // ikke samme passord
+        model.app.errorMessage = "Passord matcher ikke";
         return false;
     }
 }

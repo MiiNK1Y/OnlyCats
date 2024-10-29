@@ -15,6 +15,7 @@ function updateAddUserView() {
                 <input placeholder="Gjenta passord" onchange="model.input.signUp.repeatPassword = this.value" />
             </div>
             <div><button onclick="addNewUser()">Lag ny bruker</button></div>
+            <div>${model.app.errorMessage}</div>
         </div>
     `;
     return html;
