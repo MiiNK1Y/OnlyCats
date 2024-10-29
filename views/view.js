@@ -14,7 +14,7 @@ function mainBody() {
         case "login":
             return loginView();
         case "newUserPage":
-            return updateAddUserView();
+            return addUserView();
         case "profilePage":
             return viewProfile();
         case "catalogue":

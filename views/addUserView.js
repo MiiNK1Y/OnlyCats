@@ -1,6 +1,4 @@
-// KAMILLA
-
-function updateAddUserView() {
+function addUserView() {
     let html = /* HTML */ `
         <div class="addUserContainer">
             <div>Lag ny bruker</div>
@@ -17,5 +15,6 @@ function updateAddUserView() {
             <div>${model.app.errorMessage}</div>
         </div>
     `;
+
     return html;
 }

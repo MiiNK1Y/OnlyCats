@@ -1,11 +1,11 @@
 
-function lastAdded(){
+function lastAdded() {
     // code here
 }
 
-function mostPopular(){
+function mostPopular() {
     let cats = model.data.cat;
-    
+
     cats.sort((a, b) => {
         if (a.givenRatings > b.givenRatings) {
             return -1; // hvis a er høyest, plasseres den før b
@@ -18,37 +18,59 @@ function mostPopular(){
     return cats;
 }
 
-function random(){
+function random() {
     // code here
 }
 
-function sortAge(){
+function sortAge() {
     // code here
 }
 
-function sortGender(){
+function sortGender() {
     // code here
 }
 
-function sortColour(){
+function sortColour() {
     // code here
 }
 
-function sortNameAlphabetical(){
-    let cats = model.data.cat;
+function sortNameAlphabetical() {
+    //    let cats = model.data.cat;
+    //
+    //    cats.sort((a, b) => {
+    //        if (a.name < b.name) return -1; //a er før b
+    //        if (a.name > b.name) return 1; // a er etter b
+    //        return 0; // hvis a og b er like
+    //    });
+    //    return cats;
 
-    cats.sort((a,b) => {
-        if (a.name < b.name) return -1; //a er før b
-        if (a.name > b.name) return 1; // a er etter b
-        return 0; // hvis a og b er like
-    });
-    return cats;
+    let sortedCats = cats.sort((a, b) => b.rating - a.rating);
 }
 
-function sortNameReverse(){
+function sortNameReverse() {
     // code here
 }
 
-function sortBreed(){
+function sortBreed() {
     // code here
+}
+
+function setSortBy(type) { // sorting type goes here...
+    model.app.cataloguePage.sort.by = type;
+    switch (type) {
+        case "name":
+            break;
+        case "age":
+            break;
+    }
+}
+
+function catalogueSorted() {
+    const cats = model.data.cat;
+    return cats.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function viewCataloguePage() {
+    model.app.currentPage = "catalogue";
+    updateView();
 }

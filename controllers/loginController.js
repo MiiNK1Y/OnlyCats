@@ -1,6 +1,6 @@
 function signIn() {
     let user = getUserByUsername(model.input.signIn.username)
-    if(user != undefined && user.password === model.input.signIn.password) {
+    if (user != undefined && user.password === model.input.signIn.password) {
         model.app.currentPage = 'home'
         updateView();
     }
@@ -11,10 +11,15 @@ function signIn() {
 }
 
 function getUserByUsername(username) {
-    let users = model.data.user;    
-    for(let i = 0; i < users.length; i++) {
+    let users = model.data.user;
+    for (let i = 0; i < users.length; i++) {
         if (users[i].username == username) {
             return users[i]
         }
     }
+}
+
+function viewLoginPage() {
+    model.app.currentPage = "login";
+    updateView();
 }

@@ -13,6 +13,7 @@ function catalogue() {
     };
 
     let cats = model.data.cat;
+    //let cats = catalogueSorted();
     let html = "";
 
     for (let i = 0; i < cats.length; i++) { // limit cap the cats, wait for more cats to be added in dirs.
