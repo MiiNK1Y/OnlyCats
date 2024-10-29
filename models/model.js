@@ -591,7 +591,7 @@ const model = {
             {
                 id: 10,
                 username: "NotAClosetFurry_2", // string
-                password: "secretlyaFurry123"
+                password: "secretlyaFurry123",
                 photo: "img/UserID_10/profile.jpg", // path-string
                 about: "Jeg kler meg ikke ut som en katt.", // string
                 cats: [7, 15], // list of ID numbers
