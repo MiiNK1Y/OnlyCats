@@ -511,6 +511,7 @@ const model = {
             {
                 id: 0,
                 username: "thicclover88", // string
+                password: "MyPassword123",
                 photo: "img/UserID_0/profile.jpg", // path-string
                 about: "love my thicc boi.", // string
                 cats: [0], // list of ID numbers
@@ -518,6 +519,7 @@ const model = {
             {
                 id: 1,
                 username: "BeatriceTheQueen3", // string
+                password: "thisisaPassword4",
                 photo: "img/UserID_1/profile.jpg", // path-string
                 about: "Katte ekspert og frilufts pro.", // string
                 cats: [4], // list of ID numbers
@@ -525,6 +527,7 @@ const model = {
             {
                 id: 2,
                 username: "bbthina", // string
+                password: "Testing123",
                 photo: "img/UserID_2/profile.jpg", // path-string
                 about: "Slowly making my way to becoming a crazy catlady", // string
                 cats: [2, 11], // list of ID numbers
@@ -532,6 +535,7 @@ const model = {
             {
                 id: 3,
                 username: "McLover", // string
+                password: "McLover123",
                 photo: "img/UserID_3/profile.jpg", // path-string
                 about: "Jeg elsker katter mest av alt, eller, nesten like mye som jeg elsker en god burger", // string
                 cats: [5], // list of ID numbers
@@ -539,6 +543,7 @@ const model = {
             {
                 id: 4,
                 username: "Average_Pussy_Enjoyer_69", // string
+                password: "lovemesomePUSSY420",
                 photo: "img/UserID_4/profile.jpg", // path-string
                 about: " I love a good pussy.", // string
                 cats: [3], // list of ID numbers
@@ -546,6 +551,7 @@ const model = {
             {
                 id: 5,
                 username: "Nyamaster_Master", // string
+                password: "Ilovecats45",
                 photo: "img/UserID_5/profile.jpg", // path-string
                 about: "Liker katter, spesielt den som ikke er min.", // string
                 cats: [1], // list of ID numbers
@@ -553,6 +559,7 @@ const model = {
             {
                 id: 6,
                 username: "Feline_Fellow06", // string
+                password: "fellowMellow12",
                 photo: "img/UserID_6/profile.jpg", // path-string
                 about: "?", // string
                 cats: [9], // list of ID numbers
@@ -560,6 +567,7 @@ const model = {
             {
                 id: 7,
                 username: "TheOneWhoMeows1999", // string
+                password: "meowPassword99",
                 photo: "img/UserID_7/profile.jpg", // path-string
                 about: "meow meow", // string
                 cats: [8, 13], // list of ID numbers
@@ -567,6 +575,7 @@ const model = {
             {
                 id: 8,
                 username: "Purrfect_Owner", // string
+                password: "thePurrfectPassword1",
                 photo: "img/UserID_8/profile.jpg", // path-string
                 about: "Kvinne. 54. Akershus. Bilbo <3 ", // string
                 cats: [6, 14], // list of ID numbers
@@ -574,6 +583,7 @@ const model = {
             {
                 id: 9,
                 username: "FurryFuzzman", // string
+                password: "FurrypassworD84",
                 photo: "img/UserID_9/profile.jpg", // path-string
                 about: "Jeg liker å kle meg som en katt og hilse på andre som har kledd seg som katter", // string
                 cats: [10, 12], // list of ID numbers
@@ -581,6 +591,7 @@ const model = {
             {
                 id: 10,
                 username: "NotAClosetFurry_2", // string
+                password: "secretlyaFurry123"
                 photo: "img/UserID_10/profile.jpg", // path-string
                 about: "Jeg kler meg ikke ut som en katt.", // string
                 cats: [7, 15], // list of ID numbers
