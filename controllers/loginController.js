@@ -5,7 +5,7 @@ function signIn() {
         updateView();
     }
     else {
-        model.app.errorMsg = 'Feil brukernavn eller passord';
+        model.app.errorMessage = 'Feil brukernavn eller passord';
         // updateView();
     }
 }
