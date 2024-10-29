@@ -2,26 +2,40 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
-        currentUser: 2, // user ID of user.
+        currentUser: null, // user ID of user.
 
-        currentPage: "profilePage",
+        currentPage: "catalogue",
 
         page: [
             "home",
             "search",
             "catalogue",
             "rate",
-            "cat profile",
+            "catProfile",
             "profilePage",
             "login",
             "newUserPage",
-            "edit user",
-            "add cat",
-            "edit cat",
+            "editUser",
+            "addCat",
+            "editCat",
             "catCard",
         ],
 
-        errorMessage: "",
+        error: {
+            wrongPassword: "",
+            emptyField: "",
+        },
+
+        cataloguePage: {
+            sort: {
+                by: "",
+                sortBy: [
+                    "name",
+                    "age",
+                    "rating",
+                ],
+            },
+        },
     },
 
     input: {
