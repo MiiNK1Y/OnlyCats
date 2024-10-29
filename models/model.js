@@ -20,6 +20,8 @@ const model = {
             "edit cat",
             "catCard",
         ],
+
+        errorMessage: "",
     },
 
     input: {
@@ -56,16 +58,7 @@ const model = {
         maxRating: 10, // the max rating allowed for a cat, may be edited later.
         furLength: ["langhåret", "korthåret", "hårløs"], // list of path-strings, only two values are to be used.
 
-        catalogueSort: [
-            "Sist lagt til",
-            "Mest populær",
-            "Tilfeldige",
-            "Alder",
-            "Kjønn",
-            "Farge",
-            "Navn A-Å",
-            "Rase",
-        ],
+        catalogueSort: ["Sist lagt til", "Mest populær", "Tilfeldige", "Alder", "Kjønn", "Farge", "Navn A-Å", "Rase"],
 
         cat: [
             {
@@ -191,7 +184,6 @@ const model = {
                     {
                         userID: 2,
                         ratingGiven: 9,
-                        
                     },
                     {
                         userID: 10,
