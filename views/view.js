@@ -13,7 +13,7 @@ function mainBody() {
             return homeView();
         case "login":
             return loginView();
-        case "add user":
+        case "newUserPage":
             return updateAddUserView();
         case "profilePage":
             return viewProfile();

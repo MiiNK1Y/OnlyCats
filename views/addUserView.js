@@ -2,7 +2,6 @@
 
 function updateAddUserView() {
     let html = /* HTML */ `
-        ${viewNavigationBar()}
         <div class="addUserContainer">
             <div>Lag ny bruker</div>
             <div class="addUserbox">
