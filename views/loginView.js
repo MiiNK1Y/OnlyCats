@@ -7,7 +7,7 @@ function loginView(){
                 <input placeholder="Ditt brukernavn" onchange = "model.input.signIn.username = this.value"/>
                 <h2>Passord:</h2>
                 <input type="password" placeholder="Ditt passord" onchange = "model.input.signIn.password = this.value" />
-                <p>${model.app.errorMsg}</p>
+                <p>${model.app.error.wrongPassword}</p>
             </div>
             <button onclick="signIn()">Logg inn</button>
         </div>
