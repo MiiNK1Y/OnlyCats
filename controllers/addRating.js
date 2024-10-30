@@ -1,3 +1,0 @@
-function addRating() {
-    // code here
-}
