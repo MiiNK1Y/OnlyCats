@@ -1,6 +1,7 @@
 function login() {  
     let user = getUserByUsername(model.input.signIn.username)
     if (user != undefined && user.password === model.input.signIn.password) {
+        model.app.currentUser = user;
         model.app.currentPage = 'home'
         updateView();
     }

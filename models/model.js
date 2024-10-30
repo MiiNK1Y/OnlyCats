@@ -24,7 +24,7 @@ const model = {
         currentError: "",
 
         error: {
-            wrongPassword: "Brukernavn eller passord er feil",
+            wrongPassword: "Feil brukernavn eller passord",
             passwordNotMatching: "Passord matcher ikke",
             emptyField: "Husk å fylle inn alle felter",
         },
