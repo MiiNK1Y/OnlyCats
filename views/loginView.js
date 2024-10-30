@@ -16,7 +16,7 @@ function loginView(){
                     onchange = "model.input.signIn.password = this.value"
                     value="${model.input.signIn.password ??""}"
                 />
-                <p>${model.app.error.wrongPassword}</p>
+                <p>${model.app.currentError}</p>
             </div>
             <button onclick="login()">Logg inn</button>
         </div>
