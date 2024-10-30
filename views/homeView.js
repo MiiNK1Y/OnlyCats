@@ -59,7 +59,7 @@ function topTen() {
                 star = third;
                 break;
             default:
-                star = undefined;
+                star = "&nbsp;";
                 break;
         }
 
