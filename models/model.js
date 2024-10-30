@@ -21,10 +21,12 @@ const model = {
             "catCard",
         ],
 
+        currentError: "",
+
         error: {
             wrongPassword: "",
-            passwordNotMatching: "",
-            emptyField: "",
+            passwordNotMatching: "Passord matcher ikke",
+            emptyField: "Husk å fylle inn alle felter",
         },
 
         cataloguePage: {

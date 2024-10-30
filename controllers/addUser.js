@@ -40,12 +40,12 @@ function validateSignUpFields() {
 
 function validateInput() {
     if (validateSignUpFields()) {
-        model.app.errorMessage = "Husk å fylle inn alle felter";
+        model.app.currentError = model.app.error.emptyField;
         return false;
     } else if (validatePassword()) {
         return true;
     } else {
-        model.app.errorMessage = "Passord matcher ikke";
+        model.app.currentError = model.app.error.passwordNotMatching;
         return false;
     }
 }

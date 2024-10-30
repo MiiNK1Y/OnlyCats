@@ -28,7 +28,7 @@ function addUserView() {
                 />
             </div>
             <button onclick="addNewUser()">Lag ny bruker</button>
-            <div class="input_error">${model.app.error.passwordNotMatching}</div>
+            <div class="input_error">${model.app.currentError}</div>
         </div>
     `;
 
