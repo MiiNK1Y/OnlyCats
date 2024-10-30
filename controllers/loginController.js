@@ -5,7 +5,7 @@ function login() {
         updateView();
     }
     else {
-        model.app.error.wrongPassword = "Feil brukernavn eller passord";
+        model.app.currentError = model.app.error.wrongPassword;
         updateView();
     }
 }
