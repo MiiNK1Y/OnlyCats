@@ -23,17 +23,14 @@ const model = {
 
         error: {
             wrongPassword: "",
+            passwordNotMatching: "",
             emptyField: "",
         },
 
         cataloguePage: {
             sort: {
                 by: "",
-                sortBy: [
-                    "name",
-                    "age",
-                    "rating",
-                ],
+                sortBy: ["name", "age", "rating"],
             },
         },
     },
