@@ -20,11 +20,13 @@ function addUserView() {
                     placeholder="Ditt passord"
                     onchange="model.input.signUp.password = this.value"
                     value="${model.input.signUp.password ?? ""}"
+                    type="password"
                 />
                 <input
                     placeholder="Gjenta passord"
                     onchange="model.input.signUp.repeatPassword = this.value"
                     value="${model.input.signUp.repeatPassword ?? ""}"
+                    type="password"
                 />
             </div>
             <button onclick="addNewUser()">Lag ny bruker</button>
