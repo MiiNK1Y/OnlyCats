@@ -21,7 +21,7 @@ function userNavbar() {
         `;
     } else {
         userIndex = model.data.user.findIndex(a => a.id === user);
-        userPicture = model.data.user[userIndex].photo;
+        userPicture = model.data.user[user].photo;
         html = /*HTML*/`
             <img src="${userPicture}" />
             <button onclick="viewProfilePage()">Profil</button>
