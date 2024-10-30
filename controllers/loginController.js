@@ -1,12 +1,12 @@
-function signIn() {
+function login() {  
     let user = getUserByUsername(model.input.signIn.username)
     if (user != undefined && user.password === model.input.signIn.password) {
         model.app.currentPage = 'home'
         updateView();
     }
     else {
-        model.app.errorMessage = 'Feil brukernavn eller passord';
-        // updateView();
+        model.app.error.wrongPassword = "Feil brukernavn eller passord";
+        updateView();
     }
 }
 
