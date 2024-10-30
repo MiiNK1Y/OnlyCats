@@ -25,7 +25,6 @@ function topTen() {
     const third = "⭐";
 
     let topTenItemHtml = function(rating, img, name, star) {
-        console.log(star);
         let html = /*HTML*/`
             <div class="top-ten-item_container">
                 <div class="star-rating">${star ?? ""}</div>

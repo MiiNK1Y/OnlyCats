@@ -14,7 +14,6 @@ function setRatings() {
     let cats = Object.values(model.data.cat);
     for (const cat of cats) {
         cat.rating = getMedian(cat.givenRatings);
-        console.log(cat.name, cat.rating);
     }
 }
 
