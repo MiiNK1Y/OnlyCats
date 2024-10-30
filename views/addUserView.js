@@ -3,7 +3,7 @@ function addUserView() {
         <div class="login_container">
             <h1>Lag ny bruker</h1>
             <div class="login_box">
-                <div>Brukernavn:</div>
+                <h2>Brukernavn:</h2>
                 <input
                     placeholder="Ditt brukernavn"
                     onchange="model.input.signUp.username = this.value"
@@ -28,7 +28,7 @@ function addUserView() {
                 />
             </div>
             <button onclick="addNewUser()">Lag ny bruker</button>
-            <div class="input_error">${model.app.errorMessage}</div>
+            <div class="input_error">${model.app.error.passwordNotMatching}</div>
         </div>
     `;
 
