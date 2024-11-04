@@ -20,9 +20,9 @@ function userNavbar() {
             <button class="new_user" onclick="viewNewUserPage()">Lag ny bruker</button>
         `;
     } else {
-        userPicture = model.data.user[model.app.currentUser].photo;
+        userPicture = model.data.user[model.app.currentUser - 1].photo;
         userIndex = model.data.user.findIndex(a => a.id === user);
-        userPicture = model.data.user[user].photo;
+        userPicture = model.data.user[user - 1].photo;
         html = /*HTML*/`
             <img src="${userPicture}" />
             <button onclick="viewProfilePage()">Profil</button>
