@@ -2,9 +2,9 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
-        currentUser: null, // user ID of user.
+        currentUser: 0, // user ID of user.
 
-        currentPage: "catalogue",
+        currentPage: "profilePage",
 
         page: [
             "home",
@@ -20,6 +20,8 @@ const model = {
             "editCat",
             "catCard",
         ],
+
+        selectedProfile: 0,
 
         currentError: "",
 

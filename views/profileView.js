@@ -1,10 +1,7 @@
-
-// BETHINA
-
 function viewProfile() {
     let currentUser = model.app.currentUser;
     let user = model.data.user.find(user => user.id === currentUser);
-    
+
     if (user) {
         return printCurrentUsersProfile(user);
     } else {
@@ -12,7 +9,7 @@ function viewProfile() {
     }
 }
 
-function printCurrentUsersProfile(){
+function printCurrentUsersProfile() {
     let username = model.data.user[model.app.currentUser].username;
     let bio = model.data.user[model.app.currentUser].about;
     let profilePhoto = model.data.user[model.app.currentUser].photo;
@@ -60,11 +57,11 @@ function printCurrentUsersProfile(){
     return html;
 }
 
-function printAnotherUsersProfile(){
+function printAnotherUsersProfile() {
     let username = '';
     let bio = '';
     let profilePhoto = '';
-    
+
     let html = /*HTML*/`
     
     <div class="userContainer" style="color: white;">
@@ -138,7 +135,7 @@ function printUsersCats() {
 }
 
 function printUserReviews() {
-    const userID = model.app.currentUser; 
+    const userID = model.app.currentUser;
     let html = '';
 
     // Looper gjennom alle katter i modellen
@@ -153,18 +150,18 @@ function printUserReviews() {
             html += /*HTML*/ `
                 <div class= "outerContainer">
                     `;
-                    // Looper gjennom alle vurderinger som den nåværende brukeren har gitt
-                    userRatings.forEach(rating => {
+            // Looper gjennom alle vurderinger som den nåværende brukeren har gitt
+            userRatings.forEach(rating => {
 
-                        html += /*HTML*/ `
+                html += /*HTML*/ `
                             <div class="review">
                                 <div> <img src="${curCat.photo}/main.jpg"/> </div>
                                 <div> ${curCat.name} </div>
                                 <div> ${rating.ratingGiven} / 10 </div>
                             </div>
                         `;
-                    });
-                    html += /*HTML*/ `
+            });
+            html += /*HTML*/ `
                 </div>
             `;
         }
