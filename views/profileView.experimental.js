@@ -3,34 +3,41 @@ function viewProfile() {
     const userData = model.data.user[selectedUser];
 
     const html = /*HTML*/`
-        <div class="profile_page" style="color: white;">
+        <div class="main-content_container">
+            <div class="profile_page" style="color: white;">
 
-            <div class="user_photo_container"> 
-                <div class="profile_photo">
-                    <img src="${userData.photo}" />
+                <div class="profile_photo_container"> 
+                    <div class="profile_photo">
+                        <img src="${userData.photo}" />
+                    </div>
+                    <div> <button onclick="editProfile()"> Rediger profil </button> </div>
+                    <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
                 </div>
-                <div> <button onclick="editProfile()"> Rediger profil </button> </div>
-                <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
-            </div>
 
-            <div class="vertical_seperator"></div>
+                <div class="vertical_seperator"></div>
 
-            <div class="user_text_container">
-                ${userData.username}
-                <div class="break-line"></div>
-                <div class="bio">
-                    ${userData.about}
+                <div class="user_text_container">
+                    <h1>@${userData.username}</h1>
+                    <div class="horizontal_seperator"></div>
+                    <div class="bio">
+                        ${userData.about}
+                    </div>
+                    <div class="profile_cats">
+                        ${userData.username}s katter:
+                        <div class="horizontal_seperator"></div>
+                        <div class="users_cats">
+                            ${printUserCats()}
+                        </div>
+                    </div>
                 </div>
-                Dine katter:
-                <div class="break-line"></div>
-                <div class="users_cats">
-                    ${printUserCats()}
-                </div>
-            </div>
 
-            <div class="review_container">
-                <div class="reviewHeader">Dine vurderinger:</div>
-                <div class="reviewBody">
+                <div class="ratings_container">
+                    <div class="ratings_header">
+                        <h2>@${userData.username}s<br>vurderinger</h2>
+                    </div>
+                    <div class="ratings">
+                        ${printUserRatings()}
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,11 +60,40 @@ function printUserCats() {
                 <img src="${curCat.photo}main.jpg" />
                 <div class="cat_text">
                     ${curCat.name}
-                    <div class="break_line"></div>
+                    <div class="horizontal_seperator"></div>
                     ${curCat.rating} / 10
                 </div>
             </div>
         `;
+    }
+
+    return html;
+}
+
+function printUserRatings() {
+    const selectedUser = model.app.selectedProfile;
+    //const userData = model.data.user[selectedUser];
+    const cats = model.data.cat;
+
+    let html = "";
+    for (const cat of cats) {
+        const index = cat.givenRatings.findIndex(id => id.userID === selectedUser)
+        if (index != -1) {
+            //console.log(cat.name);
+            //console.log(index);
+            //console.log(cat.givenRatings[index].ratingGiven)
+            html += /*HTML*/`
+                <div class="user_rated">
+                    <div class="user-rated_img-container">
+                        <img src="${cat.photo}/main.jpg" />
+                    </div>
+                    <div class="name_rating">
+                        ${cat.givenRatings[index].ratingGiven} / 10 <br>
+                        ${cat.name}
+                    </div>
+                </div>
+            `;
+        }
     }
 
     return html;
