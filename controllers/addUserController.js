@@ -10,7 +10,7 @@ function addNewUser() {
 function createAndAddUser() {
     let signUp = model.input.signUp;
     let newUser = {
-        id: model.data.user.length + 1,
+        id: model.data.user.length,
         username: signUp.username,
         password: signUp.password,
         email: signUp.email,
