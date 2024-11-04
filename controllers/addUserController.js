@@ -10,10 +10,13 @@ function addNewUser() {
 function createAndAddUser() {
     let signUp = model.input.signUp;
     let newUser = {
-        username: signUp.username,
         id: model.data.user.length + 1,
-        email: signUp.email,
+        username: signUp.username,
         password: signUp.password,
+        email: signUp.email,
+        photo: "img/tmp/defaultpfp.jpg",
+        about: "",
+        cats: [],
     };
     model.data.user.push(newUser);
 }
