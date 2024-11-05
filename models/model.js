@@ -4,7 +4,7 @@ const model = {
 
         currentUser: 0, // user ID of user.
 
-        currentPage: "home",
+        currentPage: "catCard",
 
         page: [
             "home",
@@ -22,6 +22,7 @@ const model = {
         ],
 
         selectedProfile: 0,
+        selectedCat: null,
 
         currentError: "",
 

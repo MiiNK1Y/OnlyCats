@@ -2,6 +2,7 @@
 // BETHINA
 
 function viewCatCard(id){
+    model.app.selectedCat = id;
     let cat = model.data.cat.find(cat => cat.id === id);
  
     let html = /*HTML*/ `
