@@ -1,7 +1,8 @@
 
 // BETHINA
 
-function viewCatCard(){
+function viewCatCard(catID){
+    let cat = model.data.cat.find(cat => cat.id === catID);
     let html = /*HTML*/ `
         
         <div class="outerCardContainer"> 
@@ -16,7 +17,7 @@ function viewCatCard(){
                 <div class="txtContainer"> 
                     <div class="exitCard" onclick="exitCard()" style="cursor: pointer;" > ❌ </div>
                     <div class="cardHeader"> 
-                        <div> Kattens navn her </div>
+                        <div> ${cat.name} </div>
                         <div> Score her </div>
                     </div>
                     <div class="cardTxt">

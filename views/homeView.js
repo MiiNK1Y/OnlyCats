@@ -29,7 +29,7 @@ function topTen() {
             <div class="top-ten-item_container">
                 <div class="star-rating">${star ?? ""}</div>
                 <div class="rating">${rating} / 10</div>
-                <div class="top-cats_img-container">
+                <div class="top-cats_img-container" onclick="viewCatCard()">
                     <img src="${img}/main.jpg" />
                 </div>
                 <div class="name">${name}</div>
