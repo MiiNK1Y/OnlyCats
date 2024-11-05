@@ -2,7 +2,7 @@ function catalogue() {
     function catalogueElement(img, name) {
         let html = /*HTML*/`
             <div class="catalogue_item">
-                <div class="top-cats_img-container">
+                <div class="top-cats_img-container" onclick="viewCatCard()">
                     <img src="${img}/main.jpg" />
                 </div>
                 <div class="name">${name}</div>

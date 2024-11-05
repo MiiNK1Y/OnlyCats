@@ -23,7 +23,7 @@ function viewProfile() {
                         ${userData.about}
                     </div>
                     <div class="profile_cats">
-                        ${userData.username}s katter:
+                        @${userData.username}s katter:
                         <div class="horizontal_seperator"></div>
                         <div class="users_cats">
                             ${printUserCats()}
