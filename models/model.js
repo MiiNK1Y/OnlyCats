@@ -194,11 +194,11 @@ const model = {
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 9,
+                        ratingGiven: 10,
                     },
                     {
                         userID: 2,
-                        ratingGiven: 9,
+                        ratingGiven: 10,
                     },
                     {
                         userID: 10,
@@ -206,11 +206,11 @@ const model = {
                     },
                     {
                         userID: 9,
-                        ratingGiven: 8,
+                        ratingGiven: 9,
                     },
                     {
                         userID: 8,
-                        ratingGiven: 8,
+                        ratingGiven: 9,
                     },
                 ],
             },
@@ -587,10 +587,10 @@ const model = {
             },
             {
                 id: 4,
-                username: "Average_Pussy_Enjoyer_69", // string
+                username: "Average_CAT_Enjoyer_69", // string
                 password: "lovemesomePUSSY420",
                 photo: "img/UserID_4/profile.jpg", // path-string
-                about: " I love a good pussy.", // string
+                about: " I love a good CAT.", // string
                 cats: [3], // list of ID numbers
             },
             {
