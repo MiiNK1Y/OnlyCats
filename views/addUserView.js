@@ -28,9 +28,10 @@ function addUserView() {
                     value="${model.input.signUp.repeatPassword ?? ""}"
                     type="password"
                 />
+                <div class="input_error">${model.app.currentError}</div>
             </div>
             <button onclick="addNewUser()">Lag ny bruker</button>
-            <div class="input_error">${model.app.currentError}</div>
+            
         </div>
     `;
 

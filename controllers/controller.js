@@ -13,11 +13,14 @@ function logOut(){
     updateView();
 }
 
-function viewloginPage() {
-    // code here
+function viewLoginPage() {
+    model.app.currentError = "";
+    model.app.currentPage = "login";
+    updateView();
 }
 
 function viewNewUserPage() {
+    model.app.currentError = "";
     model.app.currentPage = "newUserPage";
     updateView();
 }
