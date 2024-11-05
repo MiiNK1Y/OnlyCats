@@ -94,7 +94,7 @@ const model = {
                     },
                     {
                         userID: 4,
-                        ratingGiven: 7,
+                        ratingGiven: 8,
                     },
                 ],
             },
@@ -228,27 +228,27 @@ const model = {
                 givenRatings: [
                     {
                         userID: 1,
-                        ratingGiven: 10,
-                    },
-                    {
-                        userID: 2,
-                        ratingGiven: 2,
-                    },
-                    {
-                        userID: 3,
-                        ratingGiven: 5,
-                    },
-                    {
-                        userID: 4,
                         ratingGiven: 9,
                     },
                     {
+                        userID: 2,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 3,
+                        ratingGiven: 7,
+                    },
+                    {
+                        userID: 4,
+                        ratingGiven: 7,
+                    },
+                    {
                         userID: 5,
-                        ratingGiven: 3,
+                        ratingGiven: 6,
                     },
                     {
                         userID: 6,
-                        ratingGiven: 4,
+                        ratingGiven: 6,
                     },
                 ],
             },
@@ -336,7 +336,7 @@ const model = {
                 givenRatings: [
                     {
                         userID: 5,
-                        ratingGiven: 4,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 10,
@@ -344,7 +344,7 @@ const model = {
                     },
                     {
                         userID: 2,
-                        ratingGiven: 6,
+                        ratingGiven: 7,
                     },
                 ],
             },
@@ -444,7 +444,7 @@ const model = {
                 givenRatings: [
                     {
                         userID: 7,
-                        ratingGiven: 6,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 5,
@@ -452,15 +452,15 @@ const model = {
                     },
                     {
                         userID: 3,
-                        ratingGiven: 6,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 2,
-                        ratingGiven: 4,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 6,
-                        ratingGiven: 7,
+                        ratingGiven: 8,
                     },
                     {
                         userID: 9,
