@@ -12,6 +12,7 @@ function viewProfile() {
                     </div>
                     <div> <button onclick="editProfile()"> Rediger profil </button> </div>
                     <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
+                    <div> <button onclick="logOut()">Log Out </button> </div>
                 </div>
 
                 <div class="vertical_seperator"></div>

@@ -7,6 +7,12 @@ function signIn() {
     updateView();
 }
 
+function logOut(){
+    model.app.currentUser = null;
+    model.app.currentPage = "home"
+    updateView();
+}
+
 function viewloginPage() {
     // code here
 }
