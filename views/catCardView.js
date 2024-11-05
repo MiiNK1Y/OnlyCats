@@ -1,8 +1,9 @@
 
 // BETHINA
 
-function viewCatCard(catID){
-    let cat = model.data.cat.find(cat => cat.id === catID);
+function viewCatCard(id){
+    let cat = model.data.cat.find(cat => cat.id === id);
+ 
     let html = /*HTML*/ `
         
         <div class="outerCardContainer"> 
@@ -18,18 +19,18 @@ function viewCatCard(catID){
                     <div class="exitCard" onclick="exitCard()" style="cursor: pointer;" > ❌ </div>
                     <div class="cardHeader"> 
                         <div> ${cat.name} </div>
-                        <div> Score her </div>
+                        <div> ${cat.rating} </div>
                     </div>
                     <div class="cardTxt">
-                        <p> Fødselsdato: </p> 
-                        <p> Kjønn: </p> 
+                        <p> Fødselsdato: ${cat.birthday}</p> 
+                        <p> Kjønn: ${cat.gender} </p> 
                         <br>
-                        <p> Rase: </p> 
-                        <p> Farge: </p> 
-                        <p> Pelslengde: </p> 
+                        <p> Rase: ${cat.race} </p> 
+                        <p> Farge: ${cat.color} </p> 
+                        <p> Pelslengde: ${cat.furLength}</p> 
                         <br>
                         <p> 
-                            Kattens bio..............
+                            ${cat.about}
                         </p>
                         <div> 
                             Tilhører: 

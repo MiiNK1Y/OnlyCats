@@ -24,12 +24,12 @@ function topTen() {
     const second = "⭐⭐";
     const third = "⭐";
 
-    let topTenItemHtml = function(rating, img, name, star) {
+    let topTenItemHtml = function(rating, img, name, star, id) {
         let html = /*HTML*/`
             <div class="top-ten-item_container">
                 <div class="star-rating">${star ?? ""}</div>
                 <div class="rating">${rating} / 10</div>
-                <div class="top-cats_img-container" onclick="viewCatCard()">
+                <div class="top-cats_img-container" onclick="viewCatCard(${id})">
                     <img src="${img}/main.jpg" />
                 </div>
                 <div class="name">${name}</div>
@@ -66,8 +66,9 @@ function topTen() {
         let rating = sortedCats[i].rating;
         let img = sortedCats[i].photo;
         let name = sortedCats[i].name;
+        let id = sortedCats[i].id;
 
-        html += topTenItemHtml(rating, img, name, star);
+        html += topTenItemHtml(rating, img, name, star, id);
     }
 
     return html;
