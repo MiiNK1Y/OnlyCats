@@ -19,7 +19,5 @@ function mainBody() {
             return viewProfile();
         case "catalogue":
             return viewCatalogue();
-        case "catCard":
-            return viewCatCard();
     }
 }

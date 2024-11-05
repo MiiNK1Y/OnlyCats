@@ -1,9 +1,6 @@
 function homeView() {
     let html = /*HTML*/`
     <div class="home_container" style: z-index: 1;>
-        <div class="demo_floating">
-            <div class="demo_box"></div>
-        </div>
         <h1>Topp Katter!</h1>
         <div class="header_underline"></div>
         <div class="top-cats_container_wrapper">
@@ -11,6 +8,7 @@ function homeView() {
                 ${topTen()}
             </div>
         </div>
+        ${catCardView(model.app.selectedCat)}
     </div>
     `;
 
