@@ -401,14 +401,14 @@ input {
     background: var(--Mantle);
     padding: 50px;
     font-size: 2em;
+    color: var(--Text);
+    font-family: "comfortaa";
 }
 
 .cat-rate_card {
     width: 1500px;
     height: 900px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     background: var(--Mantle);
     padding: 50px;
     font-size: 2em;
@@ -430,10 +430,6 @@ input {
     font-size: 2em;
 }
 
-.text_container>.specs {
-    /**/
-}
-
 .floating {
     width: 100%;
     height: 100%;
@@ -446,4 +442,5 @@ input {
 
 .close_cat_card {
     position: absolute;
+    background-color: var(--Red);
 }

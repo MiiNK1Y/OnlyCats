@@ -29,7 +29,7 @@ function catCardView(id) {
                             Litt om katten: ${cat.about}
                         </div>
                         <div class="card_bottom">
-                            Tilhører:
+                            Tilhører: <u>${ownerOf(cat.id)}</u>
                             <button onclick="enableRating(${cat.id})">Vurder katt</button>
                         </div>
                     </div>
@@ -39,5 +39,15 @@ function catCardView(id) {
         `;
     } else {
         return "";
+    }
+}
+
+function ownerOf(cat) {
+    for (const user of model.data.user) {
+        for (const c of user.cats) {
+            if (c === cat) {
+                return user.username;
+            }
+        }
     }
 }

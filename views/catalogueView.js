@@ -1,8 +1,8 @@
 function catalogue() {
-    function catalogueElement(img, name) {
+    function catalogueElement(img, name, id) {
         let html = /*HTML*/`
-            <div class="catalogue_item">
-                <div class="top-cats_img-container" onclick="viewCatCard()">
+            <div class="catalogue_item" style: z-index: 1;>
+                <div class="top-cats_img-container" onclick="viewCatCard(${id})">
                     <img src="${img}/main.jpg" />
                 </div>
                 <div class="name">${name}</div>
@@ -19,8 +19,9 @@ function catalogue() {
     for (let i = 0; i < cats.length; i++) { // limit cap the cats, wait for more cats to be added in dirs.
         const img = cats[i].photo;
         const name = cats[i].name;
+        const id = cats[i].id;
 
-        html += catalogueElement(img, name);
+        html += catalogueElement(img, name, id);
     }
 
     return html;
