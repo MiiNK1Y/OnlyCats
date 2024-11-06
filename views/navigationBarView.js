@@ -13,8 +13,11 @@ function viewNavigationBar() {
 
 function userNavbar() {
     let user = model.app.currentUser;
+    let userPicture;
+    let userIndex;
+    let html;
 
-    if (user == null) {
+    if (user === null) {
         html = /*HTML*/`
             <button class="login" onclick="loginPageButton()">Logg på</button>
             <button class="new_user" onclick="newUserPageButton()">Lag ny bruker</button>

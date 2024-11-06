@@ -3,10 +3,10 @@ function signIn() {
     updateView();
 }
 
-function loginButton() {
-    model.app.currentPage = "home";
-    updateView();
-}
+//function loginButton() {
+//    model.app.currentPage = "home";
+//    updateView();
+//}
 
 function logOut() {
     model.app.currentUser = null;

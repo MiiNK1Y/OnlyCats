@@ -558,8 +558,8 @@ const model = {
         user: [
             {
                 id: 0,
-                username: "thicclover88", // string
-                password: "MyPassword123",
+                username: "demo", // string
+                password: "123",
                 photo: "img/UserID_0/profile.jpg", // path-string
                 about: "love my thicc boi.", // string
                 cats: [0], // list of ID numbers

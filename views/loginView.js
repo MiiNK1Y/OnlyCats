@@ -18,7 +18,7 @@ function loginView() {
                 />
                 <div class="input_error">${model.app.currentError}</div>
             </div>
-            <button onclick="loginButton()">Logg inn</button>
+            <button onclick="login()">Logg inn</button>
         </div>
     `;
 
