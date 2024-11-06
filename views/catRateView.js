@@ -25,7 +25,3 @@ function catRateView(id) {
     `;
 }
 
-
-function selectCatRating(point) {
-    model.app.ratedCat = point;
-}
