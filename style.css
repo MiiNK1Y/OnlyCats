@@ -395,8 +395,6 @@ input {
 }
 
 .outer_card_container>.card>.card_content {
-    width: 1500px;
-    height: 900px;
     display: flex;
     align-items: center;
     background: var(--Mantle);
