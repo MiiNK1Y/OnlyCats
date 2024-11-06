@@ -1,3 +1,0 @@
-function editProfile(){
-    // code here
-}

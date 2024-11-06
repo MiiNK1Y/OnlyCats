@@ -36,10 +36,6 @@ function viewCatalogue() {
     updateView();
 }
 
-function viewCatalogueButton() {
-    model.app.currentPage = "catalogue";
-}
-
 function viewHomeButton() {
     model.app.currentPage = "home";
 }

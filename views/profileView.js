@@ -1,131 +1,68 @@
 function viewProfile() {
-    let currentUser = model.app.currentUser;
-    let user = model.data.user.find(user => user.id === currentUser);
+    const selectedUser = model.app.selectedProfile;
+    const userData = model.data.user[selectedUser];
 
-    if (user) {
-        return printCurrentUsersProfile(user);
-    } else {
-        return printAnotherUsersProfile();
-    }
-}
+    const html = /*HTML*/`
+        <div class="main-content_container">
+            <div class="profile_page" style="color: white;">
 
-function printCurrentUsersProfile() {
-    let username = model.data.user[model.app.currentUser].username;
-    let bio = model.data.user[model.app.currentUser].about;
-    let profilePhoto = model.data.user[model.app.currentUser].photo;
+                <div class="profile_photo_container"> 
+                    <div class="profile_photo">
+                        <img src="${userData.photo}" />
+                    </div>
+                    <div> <button onclick="editProfile()"> Rediger profil </button> </div>
+                    <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
+                    <div> <button onclick="logOut()">Logg Ut </button> </div>
+                </div>
 
-    let html = /*HTML*/`
-    
-    <div class="userContainer" style="color: white;">
-        
-        <div class= "userPhotoContainer"> 
-            <div class="profilePhoto"> <img src="${profilePhoto}" /></div>
-            <div> <button onclick="editProfile()"> Rediger profil </button> </div>
-            <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
+                <div class="vertical_seperator"></div>
+
+                <div class="user_text_container">
+                    <h1>@${userData.username}</h1>
+                    <div class="horizontal_seperator"></div>
+                    <div class="bio">
+                        ${userData.about}
+                    </div>
+                    <div class="profile_cats">
+                        @${userData.username}s katter:
+                        <div class="horizontal_seperator"></div>
+                        <div class="users_cats">
+                            ${printUserCats()}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ratings_container">
+                    <div class="ratings_header">
+                        <h2>@${userData.username}s<br>vurderinger</h2>
+                    </div>
+                    <div class="ratings">
+                        ${printUserRatings()}
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="userTxtContainer">
-            <div> ${username} </div>
-            <hr>
-            <div class="bio"> 
-               ${bio}
-            </div>
-            <br><br>
-            <div> 
-                Dine katter: 
-            </div>
-            <hr>
-            
-            ${printUsersCats()}
-            
-        </div>
-        
-        <br><br>
-
-        <div class="reviewContainer">
-            <div class="reviewHeader"> Dine vurderinger: </div>
-
-            <div class="reviewBody">
-                ${printUserReviews()}
-            </div>
-
-        </div>  
-
-    </div>
-
     `;
+
     return html;
 }
 
-function printAnotherUsersProfile() {
-    let username = '';
-    let bio = '';
-    let profilePhoto = '';
+function printUserCats() {
+    const selectedUser = model.app.selectedProfile;
+    const userData = model.data.user[selectedUser];
 
-    let html = /*HTML*/`
-    
-    <div class="userContainer" style="color: white;">
-        
-        <div class= "userPhotoContainer"> 
-            <div class="profilePhoto"> <img src="${profilePhoto}" /></div>
-        </div>
+    let html = "";
 
-        <div class="userTxtContainer">
-            <div> ${username} </div>
-            <hr>
-            <div class="bio"> 
-               ${bio}
-            </div>
-            <br><br>
-            <div> 
-                ${username} sine katter: 
-            </div>
-            <hr>
-            
-            ${printUsersCats()}
-            
-        </div>
-        
-        <br><br>
-
-        <div class="reviewContainer">
-            <div class="reviewHeader"> Vurderinger ${username} har gitt: </div>
-
-            <div class="reviewBody">
-                ${printUserReviews()}
-            </div>
-
-        </div>  
-
-    </div>
-
-    `;
-    return html;
-}
-
-
-
-function printUsersCats() {
-    const userID = model.app.currentUser;
-    const indexOfUser = model.data.user.findIndex(user => user.id === userID);
-    const cats = model.data.user[indexOfUser].cats;
-
-    let html = '';
-    for (let i = 0; i < cats.length; i++) {
-
-        // finding the cat
-        const cat = cats[i];
-        const indexOfCats = model.data.cat.findIndex(c => c.id === cat);
-
-        // getting the cat object
-        const curCat = model.data.cat[indexOfCats];
-
-        html += /*HTML*/ `
-            <div class="usersCats">
-                <div class="userCatPhoto"> <img src="${curCat.photo}/main.jpg"/> </div> 
-                <div class="catNameScore">
-                    <div> ${curCat.name} </div>
-                    <div> ${curCat.rating} / 10 </div>
+    for (const cat of userData.cats) {
+        let indexOfCat = model.data.cat.findIndex(c => c.id === cat);
+        const curCat = model.data.cat[indexOfCat];
+        html += /*HTML*/`
+            <div class="cat">
+                <img src="${curCat.photo}main.jpg" />
+                <div class="cat_text">
+                    ${curCat.name}
+                    <div class="horizontal_seperator"></div>
+                    ${curCat.rating} / 10
                 </div>
             </div>
         `;
@@ -134,37 +71,31 @@ function printUsersCats() {
     return html;
 }
 
-function printUserReviews() {
-    const userID = model.app.currentUser;
-    let html = '';
+function printUserRatings() {
+    const selectedUser = model.app.selectedProfile;
+    //const userData = model.data.user[selectedUser];
+    const cats = model.data.cat;
 
-    // Looper gjennom alle katter i modellen
-    for (let i = 0; i < model.data.cat.length; i++) {
-        const curCat = model.data.cat[i];
-
-        // Filtrerer vurderinger som er gitt av currentUserID
-        const userRatings = curCat.givenRatings.filter(rating => rating.userID === userID);
-
-        // Hvis currentUserID har gitt en vurdering 
-        if (userRatings.length > 0) {
-            html += /*HTML*/ `
-                <div class= "outerContainer">
-                    `;
-            // Looper gjennom alle vurderinger som den nåværende brukeren har gitt
-            userRatings.forEach(rating => {
-
-                html += /*HTML*/ `
-                            <div class="review">
-                                <div> <img src="${curCat.photo}/main.jpg"/> </div>
-                                <div> ${curCat.name} </div>
-                                <div> ${rating.ratingGiven} / 10 </div>
-                            </div>
-                        `;
-            });
-            html += /*HTML*/ `
+    let html = "";
+    for (const cat of cats) {
+        const index = cat.givenRatings.findIndex(id => id.userID === selectedUser)
+        if (index != -1) {
+            //console.log(cat.name);
+            //console.log(index);
+            //console.log(cat.givenRatings[index].ratingGiven)
+            html += /*HTML*/`
+                <div class="user_rated">
+                    <div class="user-rated_img-container">
+                        <img src="${cat.photo}/main.jpg" />
+                    </div>
+                    <div class="name_rating">
+                        ${cat.givenRatings[index].ratingGiven} / 10 <br>
+                        ${cat.name}
+                    </div>
                 </div>
             `;
         }
     }
+
     return html;
 }
