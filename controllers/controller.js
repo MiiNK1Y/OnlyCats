@@ -30,9 +30,9 @@ function addNewUserButton() {
     if (validateInput()) {
         createAndAddUser();
         resetInputs();
+        model.app.currentPage = "home";
     }
 
-    model.app.currentPage = "home";
     updateView();
 }
 
