@@ -64,9 +64,3 @@ function viewNewUserPage() {
     model.app.currentPage = "newUserPage";
     updateView();
 }
-
-function logOut(){
-    model.app.currentUser = null;
-    model.app.currentPage = "home"
-    updateView();
-}
