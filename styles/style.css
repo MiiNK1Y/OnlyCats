@@ -111,7 +111,6 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
 .home_container,
@@ -122,6 +121,7 @@ input {
 .home_container h1 {
     font-size: 3em;
     text-align: center;
+    margin-top: 100px;
 }
 
 .header_underline {
@@ -215,6 +215,7 @@ input {
     color: var(--Text);
     font-family: "comfortaa";
     font-size: 1.5em;
+    margin-top: 100px;
 }
 
 .filter_buttons>button {
@@ -402,6 +403,17 @@ input {
     font-size: 2em;
 }
 
+.cat-rate_card {
+    width: 1500px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Mantle);
+    padding: 50px;
+    font-size: 2em;
+}
+
 .outer_card_container>.card>.card_main_image {
     width: 500px;
     height: 500px;
@@ -425,10 +437,13 @@ input {
 .floating {
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(20, 20, 20, 0.9)
+}
+
+.close_cat_card {
+    position: absolute;
 }

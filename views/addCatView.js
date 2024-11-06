@@ -1,8 +1,7 @@
 
 function updateAddCatView() {
- 
+
     let html = /* HTML */ `
-    ${viewNavigationBar()}
         <div class="addCatContainer">
             <div class="addCatPicBox">
                 <label for="avatar">Legg til bilder:</label> 
@@ -26,5 +25,5 @@ function updateAddCatView() {
             <div> <button onclick="addCat()">Legg til</button> </div>
         </div>
         `;
-        return html;
-    }
+    return html;
+}

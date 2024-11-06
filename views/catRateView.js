@@ -1,56 +1,31 @@
-function viewCatRateCard(){
-    let html = /*HTML*/ `
-                
-                <div class="outerCardContainer"> 
-                    <div onclick="goLeft()" style="cursor: pointer;"> ◄ </div> <!-- Arrow på utsiden av card (se slides)-->
-                    <div class="card">
-                        <div class="cardIMGContainer">
-                            <div> MAIN IMG </div>
-                            <div class="imgRow">
-                                Bilde row
-                            </div>
-                        </div>
-                        <div class="txtContainer"> 
-                            <div class="exitCard" onclick="exitCard()" style="cursor: pointer;" > ❌ </div>
-                            <div class="cardHeader"> 
-                                <div> Kattens navn her </div>
-                                <div>Gi din vurdering til CAT NAME</div>
-                                 </div>
-                            <button onclick="selectRating()">1</button>
-                            <button onclick="selectRating()">2</button>
-                            <button onclick="selectRating()">3</button>
-                            <button onclick="selectRating()">4</button>
-                            <button onclick="selectRating()">5</button>
-                            <button onclick="selectRating()">6</button>
-                            <button onclick="selectRating()">7</button>
-                            <button onclick="selectRating()">8</button>
-                            <button onclick="selectRating()">9</button>
-                            <button onclick="selectRating()">10</button>
-                                </div> 
-                                <button onclick="rateCat()"> Vurder katt </button>
-                            </div>
-                        </div> 
-                    </div>
-                    <div onclick="goRight()" style="cursor: pointer;"> ► </div> <!-- Arrow på utsiden av card (se slides)-->
+function catRateView(id) {
+    let cat = model.data.cat.find(cat => cat.id === id);
+
+    return /*HTML*/`
+        <div class="outer_card_container floating">
+            <div class="cat-rate_card">
+                <div class="card_main_image">
+                    <img src="${cat.photo}/main.jpg" />
                 </div>
+                <div class="rating_buttons">
+                    <button onclick="selectCatRating(1)">1</button>
+                    <button onclick="selectCatRating(2)">2</button>
+                    <button onclick="selectCatRating(3)">3</button>
+                    <button onclick="selectCatRating(4)">4</button>
+                    <button onclick="selectCatRating(5)">5</button>
+                    <button onclick="selectCatRating(6)">6</button>
+                    <button onclick="selectCatRating(7)">7</button>
+                    <button onclick="selectCatRating(8)">8</button>
+                    <button onclick="selectCatRating(9)">9</button>
+                    <button onclick="selectCatRating(10)">10</button>
+                </div>
+                <button class="close_cat_card" onclick="closeCatCardView()">x</button>
+            </div>
+        </div>
     `;
-    return html;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function selectCatRating(point) {
+    model.app.ratedCat = point;
+}
