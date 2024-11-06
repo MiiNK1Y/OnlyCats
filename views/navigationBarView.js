@@ -1,8 +1,8 @@
 function viewNavigationBar() {
     html = /*HTML*/`
         <div id="navbar">
-            <button class="home" onclick="homePage()">Hjem</button>
-            <button class="catalogue" onclick="viewCatalogue()">Kattalog</button>
+            <button class="home" onclick="homePageButton()">Hjem</button>
+            <button class="catalogue" onclick="cataloguePageButton()">Kattalog</button>
             <input id="search" type="text" placeholder="Søk" />
             ${userNavbar()}
         </div>
@@ -16,8 +16,8 @@ function userNavbar() {
 
     if (user == null) {
         html = /*HTML*/`
-            <button class="login" onclick="viewLoginPage()">Logg på</button>
-            <button class="new_user" onclick="viewNewUserPage()">Lag ny bruker</button>
+            <button class="login" onclick="loginPageButton()">Logg på</button>
+            <button class="new_user" onclick="newUserPageButton()">Lag ny bruker</button>
         `;
     } else {
         userPicture = model.data.user[model.app.currentUser].photo;
@@ -25,7 +25,7 @@ function userNavbar() {
         userPicture = model.data.user[user].photo;
         html = /*HTML*/`
             <img src="${userPicture}" />
-            <button onclick="viewProfilePage()">Profil</button>
+            <button onclick="profilePageButton()">Profil</button>
         `;
     }
 

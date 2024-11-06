@@ -3,45 +3,53 @@ function signIn() {
     updateView();
 }
 
+function loginButton() {
+    model.app.currentPage = "home";
+    updateView();
+}
+
 function logOut() {
     model.app.currentUser = null;
     model.app.currentPage = "home"
     updateView();
 }
 
-function viewLoginPage() {
+function loginPageButton() {
     model.app.currentError = "";
     model.app.currentPage = "login";
     updateView();
 }
 
-function viewNewUserPage() {
+function newUserPageButton() {
     model.app.currentError = "";
     model.app.currentPage = "newUserPage";
     updateView();
 }
 
-function homePage() {
+function addNewUserButton() {
+    if (validateInput()) {
+        createAndAddUser();
+        resetInputs();
+    }
+
     model.app.currentPage = "home";
     updateView();
 }
 
-function viewProfilePage() {
+function homePageButton() {
+    model.app.currentPage = "home";
+    updateView();
+}
+
+function profilePageButton() {
+    model.app.selectedProfile = model.app.currentUser;
     model.app.currentPage = "profilePage";
     updateView();
 }
 
-function viewCatalogue() {
+function cataloguePageButton() {
     model.app.currentPage = "catalogue";
     updateView();
-}
-
-function viewHomeButton() {
-    model.app.currentPage = "home";
-}
-
-function viewProfileButton() {
-    model.app.currentPage = "profilePage";
 }
 
 function viewNewUserPage() {

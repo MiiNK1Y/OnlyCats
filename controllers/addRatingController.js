@@ -1,5 +1,5 @@
 function selectCatRating(rating) {
-    if (model.app.selectedCat) {
+    if (model.app.selectedCat !== null) {
         const rate = model.app.givenRating = rating;
 
         console.log("rating...");

@@ -1,6 +1,12 @@
 function viewProfile() {
-    const selectedUser = model.app.selectedProfile;
-    const userData = model.data.user[selectedUser];
+    const userData = model.data.user.find(u => u.id === model.app.selectedProfile);
+    const userPhoto = function() {
+        try {
+            return userData.photo;
+        } catch (TypeError) {
+            return "img/tmp/defaultpfp.jpg";
+        }
+    }
 
     const html = /*HTML*/`
         <div class="main-content_container">
@@ -8,7 +14,7 @@ function viewProfile() {
 
                 <div class="profile_photo_container"> 
                     <div class="profile_photo">
-                        <img src="${userData.photo}" />
+                        <img src="${userPhoto()}" />
                     </div>
                     <div> <button onclick="editProfile()"> Rediger profil </button> </div>
                     <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
@@ -73,16 +79,12 @@ function printUserCats() {
 
 function printUserRatings() {
     const selectedUser = model.app.selectedProfile;
-    //const userData = model.data.user[selectedUser];
     const cats = model.data.cat;
 
     let html = "";
     for (const cat of cats) {
         const index = cat.givenRatings.findIndex(id => id.userID === selectedUser)
         if (index != -1) {
-            //console.log(cat.name);
-            //console.log(index);
-            //console.log(cat.givenRatings[index].ratingGiven)
             html += /*HTML*/`
                 <div class="user_rated">
                     <div class="user-rated_img-container">

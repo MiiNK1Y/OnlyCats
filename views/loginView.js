@@ -1,4 +1,4 @@
-function loginView(){
+function loginView() {
     let html = /*HTML*/ `
         <div class="login_container">
             <h1>Login</h1>
@@ -14,13 +14,13 @@ function loginView(){
                     type="password" 
                     placeholder="Ditt passord" 
                     onchange = "model.input.signIn.password = this.value"
-                    value="${model.input.signIn.password ??""}"
+                    value="${model.input.signIn.password ?? ""}"
                 />
                 <div class="input_error">${model.app.currentError}</div>
             </div>
-            <button onclick="login()">Logg inn</button>
+            <button onclick="loginButton()">Logg inn</button>
         </div>
     `;
-    
+
     return html;
 }

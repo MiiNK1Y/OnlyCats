@@ -30,7 +30,7 @@ function addUserView() {
                 />
                 <div class="input_error">${model.app.currentError}</div>
             </div>
-            <button onclick="addNewUser()">Lag ny bruker</button>
+            <button onclick="addNewUserButton()">Lag ny bruker</button>
             
         </div>
     `;

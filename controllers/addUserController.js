@@ -1,17 +1,8 @@
-function addNewUser() {
-    if (validateInput()) {
-        createAndAddUser();
-        resetInputs();
-        viewLoginPage()
-    }
-    updateView();
-}
-
-
 function createAndAddUser() {
     let signUp = model.input.signUp;
+    let newUserId = model.data.user.length;
     let newUser = {
-        id: model.data.user.length,
+        id: newUserId,
         username: signUp.username,
         password: signUp.password,
         email: signUp.email,
@@ -20,6 +11,7 @@ function createAndAddUser() {
         cats: [],
     };
     model.data.user.push(newUser);
+    model.app.currentUser = newUserId;
 }
 
 
