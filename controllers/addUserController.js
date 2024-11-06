@@ -7,6 +7,7 @@ function addNewUser() {
     updateView();
 }
 
+
 function createAndAddUser() {
     let signUp = model.input.signUp;
     let newUser = {
@@ -21,6 +22,7 @@ function createAndAddUser() {
     model.data.user.push(newUser);
 }
 
+
 function validatePassword() {
     let signUp = model.input.signUp;
 
@@ -31,6 +33,7 @@ function validatePassword() {
     }
 }
 
+
 function validateSignUpFields() {
     let signUp = model.input.signUp;
 
@@ -40,6 +43,7 @@ function validateSignUpFields() {
         return false;
     }
 }
+
 
 function validateInput() {
     if (validateSignUpFields()) {
@@ -53,6 +57,7 @@ function validateInput() {
     }
 }
 
+
 function resetInputs() {
     model.input.signUp.username = "";
     model.input.signUp.email = "";
@@ -60,7 +65,3 @@ function resetInputs() {
     model.input.signUp.repeatPassword = "";
 }
 
-function viewNewUserPage() {
-    model.app.currentPage = "newUserPage";
-    updateView();
-}

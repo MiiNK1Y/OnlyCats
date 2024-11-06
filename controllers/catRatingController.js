@@ -17,5 +17,6 @@ function setRatings() {
     }
 }
 
-setRatings();
 
+// on page-loading.
+setRatings();

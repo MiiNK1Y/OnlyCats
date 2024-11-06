@@ -1,13 +1,9 @@
-
-// functionality ------------------------------------------
-
-
 function signIn() {
-    model.app.currentPage ="home";
+    model.app.currentPage = "home";
     updateView();
 }
 
-function logOut(){
+function logOut() {
     model.app.currentUser = null;
     model.app.currentPage = "home"
     updateView();
@@ -25,32 +21,53 @@ function viewNewUserPage() {
     updateView();
 }
 
-
-function homePage(){
+function homePage() {
     model.app.currentPage = "home";
     updateView();
 }
-
-
-
-function compileRating() {
-    // code here
-}
-
 
 function viewProfilePage() {
     model.app.currentPage = "profilePage";
     updateView();
 }
 
-
-
-function search() {
-    // code here
-}
-
 function viewCatalogue() {
     model.app.currentPage = "catalogue";
+    updateView();
+}
+
+function viewCatalogueButton() {
+    model.app.currentPage = "catalogue";
+}
+
+function viewHomeButton() {
+    model.app.currentPage = "home";
+}
+
+function viewProfileButton() {
+    model.app.currentPage = "profilePage";
+}
+
+function viewNewUserPage() {
+    model.app.currentPage = "newUserPage";
+    updateView();
+}
+
+function closeCatCardView() {
+    model.app.selectedCat = null;
+    model.app.isRating = null;
+    updateView();
+}
+
+function viewCatCard(id) {
+    model.app.selectedCat = id;
+    catCardView(id);
+    updateView();
+}
+
+function enableRating(id) {
+    model.app.isRating = true;
+    catRateView(id)
     updateView();
 }
 

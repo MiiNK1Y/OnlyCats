@@ -19,8 +19,3 @@ function getUserByUsername(username) {
         }
     }
 }
-
-function viewLoginPage() {
-    model.app.currentPage = "login";
-    updateView();
-}
