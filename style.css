@@ -394,10 +394,11 @@ input {
     position: absolute;
 }
 
-.outer_card_container>.card {
+.outer_card_container>.card>.card_content {
     width: 1500px;
     height: 900px;
     display: flex;
+    align-items: center;
     background: var(--Mantle);
     padding: 50px;
     font-size: 2em;
@@ -408,26 +409,35 @@ input {
 .cat-rate_card {
     width: 1500px;
     height: 900px;
-    display: flex;
     background: var(--Mantle);
     padding: 50px;
     font-size: 2em;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
 }
 
-.outer_card_container>.card>.card_main_image {
-    width: 500px;
-    height: 500px;
+.outer_card_container>.card>.card_content>.card_main_image {
+    width: 400px;
+    height: 400px;
     overflow: hidden;
+    margin-right: 50px;
 }
 
 .card_main_image>img {
-    max-width: 500px;
-    max-height: 500px;
-    min-height: 500px;
+    object-fit: cover;
+    width: 400px;
+    height: 400px
 }
 
 .text_container>.header {
+    display: inline;
     font-size: 2em;
+}
+
+.header>.rating {
+    display: inline;
+    color: var(--Green);
 }
 
 .floating {
@@ -440,7 +450,11 @@ input {
     background-color: rgba(20, 20, 20, 0.9)
 }
 
-.close_cat_card {
-    position: absolute;
-    background-color: var(--Red);
+.text_container>.specs {
+    max-width: 700px;
+}
+
+.owner_of {
+    color: var(--Pink);
+    display: inline;
 }

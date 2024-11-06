@@ -11,29 +11,31 @@ function catCardView(id) {
         return `
             <div class="outer_card_container floating">
                 <div class="card">
-                    <div class="card_main_image">
-                        <img src="${cat.photo}/main.jpg" />
-                    </div>
-                    <div class="text_container">
-                        <div class="header">
-                            ${cat.name}
-                            ${cat.rating} / 10
-                        </div>
-                        <div class="horizontal_break"></div>
-                        <div class="specs">
-                            Fødselsdato: ${cat.birthday}<br>
-                            Kjønn: ${cat.gender}<br>
-                            Rase: ${cat.race}<br>
-                            Farge: ${cat.color}<br>
-                            Pelslengde: ${cat.furLength}<br>
-                            Litt om katten: ${cat.about}
-                        </div>
-                        <div class="card_bottom">
-                            Tilhører: <u>${ownerOf(cat.id)}</u>
-                            <button onclick="enableRating(${cat.id})">Vurder katt</button>
-                        </div>
-                    </div>
                     <button class="close_cat_card" onclick="closeCatCardView()">x</button>
+                    <div class="card_content">
+                        <div class="card_main_image">
+                            <img src="${cat.photo}/main.jpg" />
+                        </div>
+                        <div class="text_container">
+                            <div class="header">
+                                ${cat.name}
+                                <div class="rating">${cat.rating}</div> / 10
+                            </div>
+                            <div class="horizontal_break"></div>
+                            <div class="specs">
+                                <u><strong>Fødselsdato</strong></u>: ${cat.birthday}<br>
+                                <u><strong>Kjønn</strong></u>: ${cat.gender}<br><br>
+                                <u><strong>Rase</strong></u>: ${cat.race}<br>
+                                <u><strong>Farge</strong></u>: ${cat.color}<br>
+                                <u><strong>Pelslengde</strong></u>: ${cat.furLength}<br><br>
+                                <u><strong>Litt om katten</strong></u>: ${cat.about}<br><br>
+                            </div>
+                            <div class="card_bottom">
+                                <u><strong>Tilhører</strong></u>: <div class="owner_of">${ownerOf(cat.id)}</div>
+                                <button onclick="enableRating(${cat.id})">Vurder katt</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
