@@ -24,7 +24,7 @@ const model = {
         selectedProfile: null,
         selectedCat: null,
         isRating: false,
-        ratedCat: null,
+        givenRating: null,
 
         currentError: "",
 
