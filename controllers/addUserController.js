@@ -2,7 +2,7 @@ function addNewUser() {
     if (validateInput()) {
         createAndAddUser();
         resetInputs();
-        model.app.currentPage = "login"; //?
+        viewLoginPage()
     }
     updateView();
 }
@@ -62,11 +62,5 @@ function resetInputs() {
 
 function viewNewUserPage() {
     model.app.currentPage = "newUserPage";
-    updateView();
-}
-
-function logOut(){
-    model.app.currentUser = null;
-    model.app.currentPage = "home"
     updateView();
 }
