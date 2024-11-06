@@ -8,8 +8,8 @@ function homeView() {
                 ${topTen()}
             </div>
         </div>
-        ${catCardView(model.app.selectedCat)}
     </div>
+    ${catCardView(model.app.selectedCat)}
     `;
 
     return html;

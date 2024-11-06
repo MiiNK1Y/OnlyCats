@@ -45,8 +45,8 @@ function viewCatalogue() {
             <div class="catalogue_container">
                 ${catalogue()}
             </div>
-            ${catCardView(model.app.selectedCat)}
         </div>
+        ${catCardView(model.app.selectedCat)}
     `;
 
     return html;
