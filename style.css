@@ -503,3 +503,12 @@ input {
     cursor: pointer;
     text-decoration: underline;
 }
+
+.users_cats>.cat>img {
+    padding: 10px;
+}
+
+.profile_cats>.users_cats {
+    max-height: 260px;
+    overflow: auto;
+}

@@ -16,9 +16,7 @@ function viewProfile() {
                     <div class="profile_photo">
                         <img src="${userPhoto()}" />
                     </div>
-                    <div> <button onclick="editProfile()"> Rediger profil </button> </div>
-                    <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
-                    <div> <button onclick="logOut()">Logg Ut </button> </div>
+                    ${buttonsIfUser(userData.id)}
                 </div>
 
                 <div class="vertical_seperator"></div>
@@ -51,6 +49,16 @@ function viewProfile() {
     `;
 
     return html;
+}
+
+function buttonsIfUser(id) {
+    if (id === model.app.currentUser) {
+        return /*HTML*/`
+            <div> <button onclick="editProfile()"> Rediger profil </button> </div>
+            <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
+            <div> <button onclick="logOut()">Logg Ut </button> </div>
+        `;
+    } else return "";
 }
 
 function printUserCats() {
