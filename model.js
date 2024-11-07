@@ -2,6 +2,8 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
+        demoMode: false,
+
         currentUser: null, // user ID of user.
 
         currentPage: "home",
@@ -25,6 +27,16 @@ const model = {
         selectedCat: null,
         isRating: false,
         givenRating: null,
+
+        catalogueSorting: [
+            "default",
+            "alphabetical",
+            "alphabeticalReverse",
+            "age",
+            "popularity",
+            "gender",
+        ],
+        currentCatalogueSorting: "default",
 
         currentError: "",
 

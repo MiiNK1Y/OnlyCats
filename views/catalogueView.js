@@ -12,8 +12,29 @@ function catalogue() {
         return html;
     };
 
-    let cats = model.data.cat;
-    //let cats = catalogueSorted();
+    let cats;
+
+    switch (model.app.currentCatalogueSorting) {
+        case "default":
+            cats = sortIdLastAdded();
+            break;
+        case "alphabetical":
+            cats = sortNameAlphabetical();
+            break;
+        case "alphabeticalReverse":
+            cats = sortNameAlphabeticalReverse();
+            break;
+        case "age":
+            cats = sortAge();
+            break;
+        case "popularity":
+            cats = sortPopularity();
+            break;
+        case "gender":
+            cats = sortGender();
+            break;
+    }
+
     let html = "";
 
     for (let i = 0; i < cats.length; i++) { // limit cap the cats, wait for more cats to be added in dirs.
@@ -32,15 +53,15 @@ function viewCatalogue() {
         <div class="catalogue-view_container">
             <div class="filter_buttons">
                 Sorter etter:
-                <button onclick="lastAdded()">Sist lagt til</button>
-                <button onclick="mostPopular()">Mest populær</button>
-                <button onclick="random()">Tilfeldig</button>
-                <button onclick="sortAge()">Alder</button>
-                <button onclick="sortGender()">Kjønn</button>
-                <button onclick="sortColour()">Farge</button>
-                <button onclick="sortNameAlphabetical()">Navn A-Å</button>
-                <button onclick="sortNameReverse()">Navn Å-A</button>
-                <button onclick="sortBreed()">Rase</button>
+                <button onclick="catalogueSortStandard()">Sist lagt til</button>
+                <button onclick="catalogueSortPopular()">Mest populær</button>
+                <button style="opacity: 0.6" onclick="">Tilfeldig</button>
+                <button onclick="catalogueSortAge()">Alder</button>
+                <button onclick="catalogueSortGender()">Kjønn</button>
+                <button style="opacity: 0.6" onclick="sortColour()">Farge</button>
+                <button onclick="catalogueSortAlphabetical()">Navn A-Å</button>
+                <button onclick="catalogueSortAlphabeticalReverse()">Navn Å-A</button>
+                <button style="opacity: 0.6" onclick="sortBreed()">Rase</button>
             </div> 
             <div class="catalogue_container">
                 ${catalogue()}

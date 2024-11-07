@@ -1,3 +1,8 @@
+function toggleRatingDemo() {
+    model.app.demoMode = model.app.demoMode ? false : true;
+    updateView();
+}
+
 function signIn() {
     model.app.currentPage = "home";
     updateView();
@@ -70,3 +75,40 @@ function enableRating(id) {
     updateView();
 }
 
+
+// catalogue sorting types --------------------------------
+function catalogueSortStandard() {
+    console.log("sorting standard (last added, oldest first)");
+    model.app.currentCatalogueSorting = "default";
+    updateView();
+}
+
+function catalogueSortAlphabetical() {
+    console.log("sorting alphabeticaly");
+    model.app.currentCatalogueSorting = "alphabetical";
+    updateView();
+}
+
+function catalogueSortAlphabeticalReverse() {
+    console.log("sorting reverse alphabeticaly");
+    model.app.currentCatalogueSorting = "alphabeticalReverse";
+    updateView();
+}
+
+function catalogueSortAge() {
+    console.log("sorting by age (oldest to youngest)");
+    model.app.currentCatalogueSorting = "age";
+    updateView();
+}
+
+function catalogueSortPopular() {
+    console.log("sorting by popularity (higest first)");
+    model.app.currentCatalogueSorting = "popularity";
+    updateView();
+}
+
+function catalogueSortGender() {
+    console.log("sorting by gender (ladies first)");
+    model.app.currentCatalogueSorting = "gender";
+    updateView();
+}

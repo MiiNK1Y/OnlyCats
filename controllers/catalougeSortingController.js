@@ -1,42 +1,24 @@
-function mostPopular() {
-    let cats = model.data.cat;
-
-    cats.sort((a, b) => {
-        if (a.givenRatings > b.givenRatings) {
-            return -1; // hvis a er høyest, plasseres den før b
-        } else if (a.givenRatings < b.givenRatings) {
-            return 1; // hvis b er høyest +plasseres den før a
-        } else {
-            return 0; // hvis de er like gjøres det ingenting
-        }
-    });
-    return cats;
+function sortIdLastAdded() {
+    return model.data.cat.sort((a, b) => a.id - b.id);
 }
-
 
 function sortNameAlphabetical() {
-    let sortedCats = cats.sort((a, b) => b.rating - a.rating);
+    return model.data.cat.sort((a, b) => a.name.localeCompare(b.name));
 }
 
-
-function setSortBy(type) { // sorting type goes here...
-    model.app.cataloguePage.sort.by = type;
-    switch (type) {
-        case "name":
-            break;
-        case "age":
-            break;
-    }
+function sortNameAlphabeticalReverse() {
+    return model.data.cat.sort((a, b) => b.name.localeCompare(a.name));
 }
 
-
-function catalogueSorted() {
-    const cats = model.data.cat;
-    return cats.sort((a, b) => a.name.localeCompare(b.name));
+function sortAge() {
+    return model.data.cat.sort((a, b) => a.birthday - b.birthday);
 }
 
-
-function viewCataloguePage() {
-    model.app.currentPage = "catalogue";
-    updateView();
+function sortPopularity() {
+    return model.data.cat.sort((a, b) => b.rating - a.rating);
 }
+
+function sortGender() {
+    return model.data.cat.sort((a, b) => b.gender.localeCompare(a.gender));
+}
+

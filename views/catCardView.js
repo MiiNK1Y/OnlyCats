@@ -19,11 +19,18 @@ function catCardView(id) {
                         <div class="text_container">
                             <div class="header">
                                 ${cat.name}
-                                <div class="rating">${cat.rating}</div> / 10
+                                <div class="rating_of">
+                                    <div class="rating">
+                                        ${cat.rating}
+                                    </div>
+                                    / 10
+                                </div>
                             </div>
                             <div class="horizontal_break"></div>
                             <div class="specs">
-                                <u><strong>Fødselsdato</strong></u>: ${cat.birthday}<br>
+                                <div class="birthday">
+                                    <u><strong>Fødselsdato</strong></u>: ${formatBirthday(cat.birthday)}<br>
+                                </div>
                                 <u><strong>Kjønn</strong></u>: ${cat.gender}<br><br>
                                 <u><strong>Rase</strong></u>: ${cat.race}<br>
                                 <u><strong>Farge</strong></u>: ${cat.color}<br>
@@ -32,12 +39,30 @@ function catCardView(id) {
                             </div>
                             <div class="card_bottom">
                                 <u><strong>Tilhører</strong></u>: <div class="owner_of" onclick="fromCardShowUser(clickableUser(${cat.id}))">${ownerOf(cat.id)}</div>
-                                <button class="rate" onclick="enableRating(${cat.id})">Vurder katt</button>
+                                ${demoRatingOrNot(cat)}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        `;
+    } else {
+        return "";
+    }
+}
+
+function formatBirthday(bday) {
+    const nbday = String(bday);
+    let year = nbday.slice(0, 4);
+    let month = nbday.slice(4, 6);
+    let day = nbday.slice(6, 8);
+    return day + "." + month + "." + year;
+}
+
+function demoRatingOrNot(cat) {
+    if (model.app.demoMode || (!model.app.demoMode && model.app.currentUser !== null)) {
+        return /*HTML*/`
+            <button class="rate" onclick="enableRating(${cat.id})">Vurder katt</button>
         `;
     } else {
         return "";
