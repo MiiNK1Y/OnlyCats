@@ -408,6 +408,7 @@ input {
 
 .outer_card_container>.card {
     position: relative;
+    line-height: 2.7em;
 }
 
 .outer_card_container>.card>.card_content {
@@ -457,7 +458,7 @@ input {
     float: right;
     background-color: var(--Surface_0);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
 }
 
