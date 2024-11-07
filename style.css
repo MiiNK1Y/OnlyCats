@@ -498,3 +498,8 @@ input {
     height: 60px;
     text-align: center;
 }
+
+.owner_of:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -31,7 +31,7 @@ function catCardView(id) {
                                 <u><strong>Litt om katten</strong></u>: ${cat.about}<br><br>
                             </div>
                             <div class="card_bottom">
-                                <u><strong>Tilhører</strong></u>: <div class="owner_of">${ownerOf(cat.id)}</div>
+                                <u><strong>Tilhører</strong></u>: <div class="owner_of" onclick="fromCardShowUser(clickableUser(${cat.id}))">${ownerOf(cat.id)}</div>
                                 <button class="rate" onclick="enableRating(${cat.id})">Vurder katt</button>
                             </div>
                         </div>
@@ -42,6 +42,23 @@ function catCardView(id) {
     } else {
         return "";
     }
+}
+
+function clickableUser(cat) {
+    for (const user of model.data.user) {
+        for (const c of user.cats) {
+            if (c === cat) {
+                return user.id;
+            }
+        }
+    }
+}
+
+function fromCardShowUser(user) {
+    model.app.selectedCat = null;
+    model.app.selectedProfile = user;
+    model.app.currentPage = "profilePage";
+    updateView();
 }
 
 function ownerOf(cat) {

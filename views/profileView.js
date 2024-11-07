@@ -64,7 +64,7 @@ function printUserCats() {
         const curCat = model.data.cat[indexOfCat];
         html += /*HTML*/`
             <div class="cat">
-                <img src="${curCat.photo}main.jpg" />
+                <img src="${curCat.photo}/main.jpg" />
                 <div class="cat_text">
                     ${curCat.name}
                     <div class="horizontal_seperator"></div>
