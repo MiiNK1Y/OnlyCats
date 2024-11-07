@@ -443,7 +443,16 @@ input {
     font-size: 2em;
 }
 
-.header>.rating {
+.header>.rating_of {
+    display: inline;
+    float: right;
+    background-color: var(--Surface_0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header>.rating_of>.rating {
     display: inline;
     color: var(--Green);
 }
@@ -511,4 +520,9 @@ input {
 .profile_cats>.users_cats {
     max-height: 260px;
     overflow: auto;
+}
+
+.specs>.birthday {
+    display: inline;
+    text-wrap: nowrap;
 }

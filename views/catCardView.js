@@ -19,11 +19,18 @@ function catCardView(id) {
                         <div class="text_container">
                             <div class="header">
                                 ${cat.name}
-                                <div class="rating">${cat.rating}</div> / 10
+                                <div class="rating_of">
+                                    <div class="rating">
+                                        ${cat.rating}
+                                    </div>
+                                    / 10
+                                </div>
                             </div>
                             <div class="horizontal_break"></div>
                             <div class="specs">
-                                <u><strong>Fødselsdato</strong></u>: ${cat.birthday}<br>
+                                <div class="birthday">
+                                    <u><strong>Fødselsdato</strong></u>: ${cat.birthday}<br>
+                                </div>
                                 <u><strong>Kjønn</strong></u>: ${cat.gender}<br><br>
                                 <u><strong>Rase</strong></u>: ${cat.race}<br>
                                 <u><strong>Farge</strong></u>: ${cat.color}<br>
