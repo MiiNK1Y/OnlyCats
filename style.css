@@ -282,6 +282,14 @@ input {
     justify-content: center;
 }
 
+.profile_photo_container>div>button {
+    background-color: var(--Flamingo);
+    font-size: 1.2em;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .profile_page .profile_photo {
     width: 200px;
     height: 200px;
