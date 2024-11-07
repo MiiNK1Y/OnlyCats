@@ -29,7 +29,7 @@ function catCardView(id) {
                             <div class="horizontal_break"></div>
                             <div class="specs">
                                 <div class="birthday">
-                                    <u><strong>Fødselsdato</strong></u>: ${cat.birthday}<br>
+                                    <u><strong>Fødselsdato</strong></u>: ${formatBirthday(cat.birthday)}<br>
                                 </div>
                                 <u><strong>Kjønn</strong></u>: ${cat.gender}<br><br>
                                 <u><strong>Rase</strong></u>: ${cat.race}<br>
@@ -49,6 +49,14 @@ function catCardView(id) {
     } else {
         return "";
     }
+}
+
+function formatBirthday(bday) {
+    const nbday = String(bday);
+    let year = nbday.slice(0, 4);
+    let month = nbday.slice(4, 6);
+    let day = nbday.slice(6, 8);
+    return day + "." + month + "." + year;
 }
 
 function demoRatingOrNot(cat) {
