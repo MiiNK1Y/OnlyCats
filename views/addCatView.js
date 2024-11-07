@@ -1,4 +1,3 @@
-
 function updateAddCatView() {
 
     let html = /* HTML */ `
