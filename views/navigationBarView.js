@@ -1,6 +1,7 @@
 function viewNavigationBar() {
     html = /*HTML*/`
         <div id="navbar">
+            <button style="opacity: 0.5" onclick="toggleRatingDemo()">${model.app.demoMode ? "mode: demo" : "mode: regular"}</button>
             <button class="home" onclick="homePageButton()">Hjem</button>
             <button class="catalogue" onclick="cataloguePageButton()">Kattalog</button>
             <input id="search" type="text" placeholder="Søk" />

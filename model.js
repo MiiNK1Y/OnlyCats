@@ -2,6 +2,8 @@ const model = {
     app: {
         html: document.getElementById("app"),
 
+        demoMode: false,
+
         currentUser: null, // user ID of user.
 
         currentPage: "home",

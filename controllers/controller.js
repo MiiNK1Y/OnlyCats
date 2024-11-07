@@ -1,3 +1,8 @@
+function toggleRatingDemo() {
+    model.app.demoMode = model.app.demoMode ? false : true;
+    updateView();
+}
+
 function signIn() {
     model.app.currentPage = "home";
     updateView();

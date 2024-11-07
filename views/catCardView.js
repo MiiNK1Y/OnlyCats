@@ -32,12 +32,22 @@ function catCardView(id) {
                             </div>
                             <div class="card_bottom">
                                 <u><strong>Tilhører</strong></u>: <div class="owner_of" onclick="fromCardShowUser(clickableUser(${cat.id}))">${ownerOf(cat.id)}</div>
-                                <button class="rate" onclick="enableRating(${cat.id})">Vurder katt</button>
+                                ${demoRatingOrNot(cat)}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        `;
+    } else {
+        return "";
+    }
+}
+
+function demoRatingOrNot(cat) {
+    if (model.app.demoMode || (!model.app.demoMode && model.app.currentUser !== null)) {
+        return /*HTML*/`
+            <button class="rate" onclick="enableRating(${cat.id})">Vurder katt</button>
         `;
     } else {
         return "";
