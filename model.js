@@ -26,6 +26,16 @@ const model = {
         isRating: false,
         givenRating: null,
 
+        catalogueSorting: [
+            "default",
+            "alphabetical",
+            "alphabeticalReverse",
+            "age",
+            "popularity",
+            "gender",
+        ],
+        currentCatalogueSorting: "default",
+
         currentError: "",
 
         error: {
