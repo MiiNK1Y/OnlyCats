@@ -398,6 +398,10 @@ input {
     height: 100%;
 }
 
+.outer_card_container>.card {
+    position: relative;
+}
+
 .outer_card_container>.card>.card_content {
     display: flex;
     align-items: center;
@@ -406,6 +410,8 @@ input {
     font-size: 2em;
     color: var(--Text);
     font-family: "comfortaa";
+    border-radius: 20px;
+    box-shadow: 0 0 100px -10px var(--Yellow);
 }
 
 .cat-rate_card {
@@ -459,4 +465,36 @@ input {
 .owner_of {
     color: var(--Pink);
     display: inline;
+}
+
+.close_cat_card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background: var(--Red);
+    border: 0;
+    border-radius: 50%;
+    font-size: 2em;
+}
+
+.card_bottom>.rate {
+    margin-left: 20px;
+    font-size: 1em;
+    padding: 7px;
+    background-color: var(--Peach);
+    border: 0;
+    border-radius: 8px;
+    font-family: "comfortaa";
+}
+
+.rating_buttons>button {
+    font-family: "comfortaa";
+    font-size: 0.8em;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--Maroon);
+    width: 60px;
+    height: 60px;
+    text-align: center;
 }

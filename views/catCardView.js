@@ -11,7 +11,7 @@ function catCardView(id) {
         return `
             <div class="outer_card_container floating">
                 <div class="card">
-                    <button class="close_cat_card" onclick="closeCatCardView()">x</button>
+                    <button class="close_cat_card" onclick="closeCatCardView()">&#10005;</button>
                     <div class="card_content">
                         <div class="card_main_image">
                             <img src="${cat.photo}/main.jpg" />
@@ -32,7 +32,7 @@ function catCardView(id) {
                             </div>
                             <div class="card_bottom">
                                 <u><strong>Tilhører</strong></u>: <div class="owner_of">${ownerOf(cat.id)}</div>
-                                <button onclick="enableRating(${cat.id})">Vurder katt</button>
+                                <button class="rate" onclick="enableRating(${cat.id})">Vurder katt</button>
                             </div>
                         </div>
                     </div>
