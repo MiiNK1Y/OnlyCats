@@ -45,7 +45,7 @@ function queryWithNumber(num) {
 
 function queryWithString(str) {
     console.log("filtering with: ", str);
-    const nameResult = model.data.cat.filter(c => c.name.includes(str));
+    const nameResult = model.data.cat.filter(c => c.name.toLowerCase().includes(str));
     const genderResult = model.data.cat.filter(c => c.gender.includes(str));
     let result;
     if (nameResult.length > 0 && genderResult.length > 0) {
