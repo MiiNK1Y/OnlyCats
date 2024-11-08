@@ -629,3 +629,11 @@ input {
 .modal-open {
     overflow-y: hidden;
 }
+
+/*-----------ADD CAT---------*/
+
+.card_content>.add_image,
+.card_content>.add_text {
+    display: flex;
+    flex-direction: column;
+}

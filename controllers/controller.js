@@ -51,6 +51,11 @@ function profilePageButton() {
     updateView();
 }
 
+function addCatButton() {
+    model.app.isAddingCat = true;
+    updateView();
+}
+
 function cataloguePageButton() {
     model.app.currentPage = "catalogue";
     closeSearch();

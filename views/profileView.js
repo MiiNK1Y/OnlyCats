@@ -46,6 +46,7 @@ function viewProfile() {
                 </div>
             </div>
         </div>
+        ${model.app.isAddingCat ? addCatView() : ""}
     `;
 
     return html;
@@ -55,7 +56,7 @@ function buttonsIfUser(id) {
     if (id === model.app.currentUser) {
         return /*HTML*/`
             <div> <button onclick="editProfile()"> Rediger profil </button> </div>
-            <div> <button onclick="addCat()"> Legg til ny katt </button> </div>
+            <div> <button onclick="addCatButton()"> Legg til ny katt </button> </div>
             <div> <button onclick="logOut()">Logg Ut </button> </div>
         `;
     } else return "";

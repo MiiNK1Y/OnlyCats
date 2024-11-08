@@ -77,6 +77,7 @@ const model = {
 
         newCat: {
             name: null, // string
+            photo: null, // path-string 
             birthday: null, // number
             gender: null, // string
             race: null, // string
