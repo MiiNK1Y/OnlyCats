@@ -27,7 +27,7 @@ function analyzeInput() {
 
 function queryWithNumber(num) {
     let strNum = String(num);
-    const birthdayResult = model.data.cat.filter(c => formatBirthday(String(c.birthday)).includes(strNum));
+    const birthdayResult = model.data.cat.filter(c => formatBirthday(c.birthday).includes(strNum));
     const ratingResult = model.data.cat.filter(c => String(c.rating).includes(strNum));
     let result;
     if (birthdayResult.length > 0 && ratingResult.length > 0) {
@@ -46,7 +46,7 @@ function queryWithNumber(num) {
 function queryWithString(str) {
     console.log("filtering with: ", str);
     const nameResult = model.data.cat.filter(c => c.name.toLowerCase().includes(str));
-    const genderResult = model.data.cat.filter(c => c.gender.includes(str));
+    const genderResult = model.data.cat.filter(c => c.gender.toLowerCase().includes(str));
     let result;
     if (nameResult.length > 0 && genderResult.length > 0) {
         const combine = nameResult.concat(genderResult);
