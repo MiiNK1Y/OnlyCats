@@ -32,8 +32,10 @@ function queryInput() {
 function queryResultView(items) {
     let html = "";
     if (items === undefined || items.length === 0) {
+        document.body.classList.remove("modal-open");
         model.data.searchResult = "";
     } else {
+        document.body.classList.add("modal-open");
         for (const i of items) {
             html += /*HTML*/`
                 <div class="query_item" onclick="viewCatCard(${i.id})">
@@ -62,10 +64,14 @@ function highlight(str) {
     const nstr = String(str);
     if (input.length > 0) {
         return nstr.replace(new RegExp(input, "gi"), `<mark class="highlight">$&</mark>`);
-    } else return str;
+    } else {
+        document.body.classList.remove("modal-open");
+        return str;
+    }
 }
 
 function closeSearch() {
+    document.body.classList.remove("modal-open");
     model.app.isSearching = false;
     model.input.search = "";
     model.data.searchResult = "";

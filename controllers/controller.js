@@ -17,12 +17,14 @@ function logOut() {
 function loginPageButton() {
     model.app.currentError = "";
     model.app.currentPage = "login";
+    closeSearch();
     updateView();
 }
 
 function newUserPageButton() {
     model.app.currentError = "";
     model.app.currentPage = "newUserPage";
+    closeSearch();
     updateView();
 }
 
@@ -38,26 +40,31 @@ function addNewUserButton() {
 
 function homePageButton() {
     model.app.currentPage = "home";
+    closeSearch();
     updateView();
 }
 
 function profilePageButton() {
     model.app.selectedProfile = model.app.currentUser;
     model.app.currentPage = "profilePage";
+    closeSearch();
     updateView();
 }
 
 function cataloguePageButton() {
     model.app.currentPage = "catalogue";
+    closeSearch();
     updateView();
 }
 
 function viewNewUserPage() {
     model.app.currentPage = "newUserPage";
+    closeSearch();
     updateView();
 }
 
 function closeCatCardView() {
+    document.body.classList.remove("modal-open");
     model.app.selectedCat = null;
     model.app.isRating = null;
     updateView();

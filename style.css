@@ -55,7 +55,7 @@ button:hover {
 /* -------------- NAVIGATION BAR --------------*/
 #navbar {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     background-color: var(--Overlay_0);
     width: 100%;
     font-size: 0;
@@ -403,8 +403,9 @@ input {
 
 .outer_card_container {
     top: 0;
-    position: absolute;
+    position: fixed;
     height: 100%;
+    overflow-y: hidden;
 }
 
 .outer_card_container>.card {
@@ -547,7 +548,7 @@ input {
 /*----------SEARCHING CARD -----------*/
 .searching_card_wrapper {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
@@ -623,4 +624,8 @@ input {
 
 .highlight {
     background: var(--Green);
+}
+
+.modal-open {
+    overflow-y: hidden;
 }

@@ -8,6 +8,8 @@ function catCardView(id) {
         model.app.selectedCat = id;
         let cat = model.data.cat.find(cat => cat.id === id);
 
+        document.body.classList.add("modal-open");
+
         return `
             <div class="outer_card_container floating">
                 <div class="card">
