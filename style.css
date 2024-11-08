@@ -54,6 +54,7 @@ button:hover {
 
 /* -------------- NAVIGATION BAR --------------*/
 #navbar {
+    z-index: 3;
     position: absolute;
     background-color: var(--Overlay_0);
     width: 100%;
@@ -541,4 +542,81 @@ input {
 .specs>.birthday {
     display: inline;
     text-wrap: nowrap;
+}
+
+/*----------SEARCHING CARD -----------*/
+.searching_card_wrapper {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searching_card {
+    font-family: "comfortaa";
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 80%;
+    background-color: var(--Base);
+    overflow: auto;
+    margin: 0 10% 0 10%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.query_item {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Mauve);
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.query_item:hover {
+    scale: 1.1;
+}
+
+.query_item>img {
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.searching_card_wrapper>.header>h1 {
+    font-family: "comfortaa";
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Maroon);
+}
+
+.searching_card_wrapper>.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searching_card_wrapper>.header>button {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background: var(--Red);
+    border: 0;
+    border-radius: 50%;
+    font-size: 2em;
+    font-family: "comfortaa";
 }

@@ -46,6 +46,8 @@ function viewProfile() {
                 </div>
             </div>
         </div>
+        ${catCardView(model.app.selectedCat)}
+        ${model.app.isSearching ? "" : model.data.searchResult}
     `;
 
     return html;

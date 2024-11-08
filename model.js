@@ -27,6 +27,7 @@ const model = {
         selectedCat: null,
         isRating: false,
         givenRating: null,
+        isSearching: false,
 
         catalogueSorting: [
             "default",
@@ -55,6 +56,8 @@ const model = {
     },
 
     input: {
+        search: "",
+
         constantInput: {
             searchBar: null, // string
         },
@@ -85,6 +88,8 @@ const model = {
     },
 
     data: {
+        searchResult: "",
+
         maxRating: 10, // the max rating allowed for a cat, may be edited later.
         furLength: ["langhåret", "korthåret", "hårløs"], // list of path-strings, only two values are to be used.
 

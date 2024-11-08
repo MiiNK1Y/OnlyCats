@@ -4,7 +4,7 @@ function viewNavigationBar() {
             <button style="opacity: 0.5;" onclick="toggleRatingDemo()">${model.app.demoMode ? "mode: demo" : "mode: regular"}</button>
             <button class="home" onclick="homePageButton()">Hjem</button>
             <button class="catalogue" onclick="cataloguePageButton()">Kattalog</button>
-            <input id="search" type="text" placeholder="Søk" />
+            <input oninput="model.input.search=this.value; analyzeInput()" id="search" type="text" placeholder="Søk" />
             ${userNavbar()}
         </div>
     `;

@@ -38,7 +38,7 @@ function catCardView(id) {
                                 <u><strong>Litt om katten</strong></u>: ${cat.about}<br><br>
                             </div>
                             <div class="card_bottom">
-                                <u><strong>Tilhører</strong></u>: <div class="owner_of" onclick="fromCardShowUser(clickableUser(${cat.id}))">${ownerOf(cat.id)}</div>
+                                <u><strong>Tilhører</strong></u>: <div class="owner_of" onclick="closeSearch(); fromCardShowUser(clickableUser(${cat.id}))">${ownerOf(cat.id)}</div>
                                 ${demoRatingOrNot(cat)}
                             </div>
                         </div>
