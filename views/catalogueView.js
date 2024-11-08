@@ -55,13 +55,13 @@ function viewCatalogue() {
                 Sorter etter:
                 <button onclick="catalogueSortStandard()">Sist lagt til</button>
                 <button onclick="catalogueSortPopular()">Mest populær</button>
-                <button style="opacity: 0.6" onclick="">Tilfeldig</button>
+                <!--<button style="opacity: 0.6" onclick="">Tilfeldig</button>-->
                 <button onclick="catalogueSortAge()">Alder</button>
                 <button onclick="catalogueSortGender()">Kjønn</button>
-                <button style="opacity: 0.6" onclick="sortColour()">Farge</button>
+                <!--<button style="opacity: 0.6" onclick="sortColour()">Farge</button>-->
                 <button onclick="catalogueSortAlphabetical()">Navn A-Å</button>
                 <button onclick="catalogueSortAlphabeticalReverse()">Navn Å-A</button>
-                <button style="opacity: 0.6" onclick="sortBreed()">Rase</button>
+                <!--<button style="opacity: 0.6" onclick="sortBreed()">Rase</button>-->
             </div> 
             <div class="catalogue_container">
                 ${catalogue()}

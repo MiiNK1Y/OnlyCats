@@ -620,3 +620,7 @@ input {
     font-size: 2em;
     font-family: "comfortaa";
 }
+
+.highlight {
+    background: var(--Green);
+}
